@@ -1,9 +1,6 @@
 # Tabular Gen-AI for Warehouse Logistics
 
-Masters dissertation project — University of Surrey (EEEM004)
-In collaboration with Locus Robotics
-Supervised by Dr. Simon Hadfield
-Student: Nyi Nyi Myo Zin (URN 6955918)
+
 
 ## What this project does
 
