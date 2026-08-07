@@ -1,0 +1,19 @@
+{
+  "stage": "vae",
+  "dataname": "dunnhumby_season",
+  "status": "PAUSED - protocol NOT completed",
+  "epochs_completed": 650,
+  "epochs_in_protocol": 4000,
+  "final_val_acc": 1.0,
+  "final_val_mse": 5e-06,
+  "final_val_ce": 5e-06,
+  "beta_final": 8e-06,
+  "beta_initial": 0.01,
+  "converged": true,
+  "checkpoint": "tabsyn_repo/tabsyn/vae/ckpt/dunnhumby_season/model.pt",
+  "checkpoint_sha256_16": "5094d9ec664fc803",
+  "checkpoint_semantics": "best-val-loss state; tabsyn VAE rewrites model.pt on every val-loss improvement",
+  "diffusion_stage": "NEVER RUN - no ckpt exists",
+  "NOTE": "TabSyn VAE has NO early stopping (no break in tabsyn_repo/tabsyn/vae/main.py); the 4000-epoch cap is unconditional. Training was stopped manually at epoch 650 after val ACC reached 1.000000 and beta had decayed 0.01 -> 8e-06, i.e. the plateau branch had fired repeatedly. The model is converged, but the full protocol used by the Instacart TabSyn bench was NOT completed - state this if any verdict is ever drawn from this checkpoint.",
+  "last_log_line": "epoch: 650, beta = 0.000008, Train MSE: 0.000007, Train CE:0.000003, Train KL:2.180021, Val MSE:0.000005, Val CE:0.000005, Train ACC:1.000000, Val ACC:1.000000"
+}

@@ -1,0 +1,338 @@
+{
+  "purpose": "rule out store-composition drift as an explanation for the seasonal gate result -- motivated by the finding that between-store category TVD (~0.17) is ~2.2x the seasonal effect (~0.077)",
+  "frozen_window": [
+    35,
+    40
+  ],
+  "usable_weeks": [
+    16,
+    50
+  ],
+  "store_mix_drift_tvd": 0.04897988332427866,
+  "category_tvd_induced_by_store_mix": 0.0023516835760749944,
+  "seasonal_category_tvd_gate": 0.08598415132924335,
+  "share_of_seasonal_explained_by_store_mix": 0.027350198143726783,
+  "n_stores_in_decomposition": 139,
+  "n_stores_present": 516,
+  "stores_tested": [
+    367,
+    406,
+    343,
+    361,
+    381,
+    319
+  ],
+  "n_tested": 6,
+  "fires_size_controlled": 4,
+  "fires_raw": 3,
+  "per_store": {
+    "367": {
+      "n_window_baskets": 966,
+      "n_baseline_baskets": 4722,
+      "raw": {
+        "N_items_per_side": 4378,
+        "bar": 0.14805847418912746,
+        "null_mean": 0.1374756557909163,
+        "null_n": 38,
+        "observed_mean": 0.16681132937414345,
+        "observed": [
+          0.16994061215166742,
+          0.16331658291457285,
+          0.1578346276838739,
+          0.18021927820922795,
+          0.16285975331201463,
+          0.15600730927364093,
+          0.1608040201005025,
+          0.16719963453631795,
+          0.18661489264504338,
+          0.16331658291457285
+        ],
+        "fires": 10,
+        "n_draws": 10,
+        "fire_rate": 1.0,
+        "effect": true
+      },
+      "size_controlled": {
+        "n_baskets_per_side": 476,
+        "bar": 0.15141312714066557,
+        "null_mean": 0.13490962525684008,
+        "null_n": 40,
+        "observed_mean": 0.16389318266440595,
+        "observed": [
+          0.1691946473090151,
+          0.1757520951881621,
+          0.17631585940328776,
+          0.15768293026042043,
+          0.16059727067167517,
+          0.1653421965351709,
+          0.16059980362712256,
+          0.15558004415115476,
+          0.15584203605973374,
+          0.16202494343831697
+        ],
+        "mean_item_count_residual": 65.2,
+        "fires": 10,
+        "n_draws": 10,
+        "fire_rate": 1.0,
+        "effect": true
+      }
+    },
+    "406": {
+      "n_window_baskets": 710,
+      "n_baseline_baskets": 3405,
+      "raw": {
+        "N_items_per_side": 3548,
+        "bar": 0.16321871476888386,
+        "null_mean": 0.14808631804122216,
+        "null_n": 39,
+        "observed_mean": 0.1706595264937993,
+        "observed": [
+          0.1795377677564825,
+          0.169391206313416,
+          0.1685456595264938,
+          0.17108229988726043,
+          0.1592446448703495,
+          0.16065388951521983,
+          0.16009019165727167,
+          0.19898534385569333,
+          0.16967305524239007,
+          0.169391206313416
+        ],
+        "fires": 7,
+        "n_draws": 10,
+        "fire_rate": 0.7,
+        "effect": true
+      },
+      "size_controlled": {
+        "n_baskets_per_side": 349,
+        "bar": 0.15538285812785124,
+        "null_mean": 0.14066707737280093,
+        "null_n": 40,
+        "observed_mean": 0.16543852946493726,
+        "observed": [
+          0.17617398824168234,
+          0.16595737578058195,
+          0.15805947672788465,
+          0.17673872600528595,
+          0.1492125386134603,
+          0.17971852623725207,
+          0.175147236864574,
+          0.15348066383984216,
+          0.16130214151012,
+          0.15859462082868891
+        ],
+        "mean_item_count_residual": 47.4,
+        "fires": 8,
+        "n_draws": 10,
+        "fire_rate": 0.8,
+        "effect": true
+      }
+    },
+    "343": {
+      "n_window_baskets": 619,
+      "n_baseline_baskets": 3201,
+      "raw": {
+        "N_items_per_side": 2241,
+        "bar": 0.2033467202141901,
+        "null_mean": 0.18160419455600177,
+        "null_n": 40,
+        "observed_mean": 0.1981258366800535,
+        "observed": [
+          0.18384649709950912,
+          0.2124051762605979,
+          0.22311468094600623,
+          0.21909861668897812,
+          0.19589468987059347,
+          0.20481927710843373,
+          0.17804551539491298,
+          0.19946452476572957,
+          0.1851851851851852,
+          0.17938420348058903
+        ],
+        "fires": 4,
+        "n_draws": 10,
+        "fire_rate": 0.4,
+        "effect": false
+      },
+      "size_controlled": {
+        "n_baskets_per_side": 304,
+        "bar": 0.19439291577113743,
+        "null_mean": 0.17730060754436586,
+        "null_n": 40,
+        "observed_mean": 0.1877414563993582,
+        "observed": [
+          0.1773449259733549,
+          0.18901555810666879,
+          0.18254554789658947,
+          0.19568621310577,
+          0.1997597406612432,
+          0.1819090858026584,
+          0.1883816523585976,
+          0.1788736918710629,
+          0.19926722669967611,
+          0.18463092151796054
+        ],
+        "mean_item_count_residual": 39.5,
+        "fires": 3,
+        "n_draws": 10,
+        "fire_rate": 0.3,
+        "effect": false
+      }
+    },
+    "361": {
+      "n_window_baskets": 425,
+      "n_baseline_baskets": 3326,
+      "raw": {
+        "N_items_per_side": 1644,
+        "bar": 0.24093673965936738,
+        "null_mean": 0.2111009732360097,
+        "null_n": 40,
+        "observed_mean": 0.24282238442822385,
+        "observed": [
+          0.2621654501216545,
+          0.23114355231143552,
+          0.22080291970802918,
+          0.23783454987834546,
+          0.24574209245742093,
+          0.26034063260340634,
+          0.23053527980535277,
+          0.26094890510948904,
+          0.25304136253041365,
+          0.225669099756691
+        ],
+        "fires": 5,
+        "n_draws": 10,
+        "fire_rate": 0.5,
+        "effect": false
+      },
+      "size_controlled": {
+        "n_baskets_per_side": 206,
+        "bar": 0.2255785443025546,
+        "null_mean": 0.2061876095762659,
+        "null_n": 40,
+        "observed_mean": 0.24082683863822046,
+        "observed": [
+          0.2376347020367446,
+          0.24478798209400318,
+          0.24851862127153046,
+          0.2566492749040379,
+          0.23651798536935642,
+          0.23415908917246125,
+          0.2140966156454161,
+          0.2476768696172306,
+          0.24853616416091018,
+          0.23969108211051388
+        ],
+        "mean_item_count_residual": 29.9,
+        "fires": 9,
+        "n_draws": 10,
+        "fire_rate": 0.9,
+        "effect": true
+      }
+    },
+    "381": {
+      "n_window_baskets": 575,
+      "n_baseline_baskets": 3168,
+      "raw": {
+        "N_items_per_side": 2216,
+        "bar": 0.19932310469314082,
+        "null_mean": 0.18461307044339537,
+        "null_n": 39,
+        "observed_mean": 0.20672382671480144,
+        "observed": [
+          0.21660649819494585,
+          0.2211191335740072,
+          0.20712996389891697,
+          0.18501805054151624,
+          0.20622743682310468,
+          0.21164259927797835,
+          0.1926895306859206,
+          0.19223826714801445,
+          0.21299638989169675,
+          0.22157039711191337
+        ],
+        "fires": 7,
+        "n_draws": 10,
+        "fire_rate": 0.7,
+        "effect": true
+      },
+      "size_controlled": {
+        "n_baskets_per_side": 281,
+        "bar": 0.19748331838736116,
+        "null_mean": 0.1803811375883912,
+        "null_n": 40,
+        "observed_mean": 0.19720183594374993,
+        "observed": [
+          0.2030466295325583,
+          0.1927369752824488,
+          0.19975511269911023,
+          0.20037863301804287,
+          0.2004967886780818,
+          0.1939090434528055,
+          0.19642695603581203,
+          0.19328685762222939,
+          0.20824860973559858,
+          0.18373275338081166
+        ],
+        "mean_item_count_residual": 49.9,
+        "fires": 5,
+        "n_draws": 10,
+        "fire_rate": 0.5,
+        "effect": false
+      }
+    },
+    "319": {
+      "n_window_baskets": 616,
+      "n_baseline_baskets": 2853,
+      "raw": {
+        "N_items_per_side": 1923,
+        "bar": 0.21383255330213208,
+        "null_mean": 0.19656786271450857,
+        "null_n": 37,
+        "observed_mean": 0.21227249089963598,
+        "observed": [
+          0.19760790431617264,
+          0.187727509100364,
+          0.21580863234529382,
+          0.21372854914196565,
+          0.2126885075403016,
+          0.2204888195527821,
+          0.21788871554862194,
+          0.22724908996359852,
+          0.21008840353614144,
+          0.21944877795111806
+        ],
+        "fires": 5,
+        "n_draws": 10,
+        "fire_rate": 0.5,
+        "effect": false
+      },
+      "size_controlled": {
+        "n_baskets_per_side": 302,
+        "bar": 0.20408846083807966,
+        "null_mean": 0.18742500998800615,
+        "null_n": 40,
+        "observed_mean": 0.20572833569225485,
+        "observed": [
+          0.1837398108085273,
+          0.23039072314698492,
+          0.1941522069880714,
+          0.21035728111452281,
+          0.20525677845716755,
+          0.21378754296456493,
+          0.20301219079180968,
+          0.2072975304680244,
+          0.21385555172853798,
+          0.19543374045433742
+        ],
+        "mean_item_count_residual": 45.9,
+        "fires": 6,
+        "n_draws": 10,
+        "fire_rate": 0.6,
+        "effect": true
+      }
+    }
+  },
+  "VERDICT": "seasonal signal is NOT store-composition drift: store mix induces only 2.7% of the seasonal category shift, and the effect still fires in 4/6 individual stores",
+  "BASIS_WARNING": "within-store sample sizes are orders of magnitude smaller than the pooled gate, so bars are looser and the TVD magnitudes are NOT interchangeable with the gate's 0.08598; cite fire rates only"
+}

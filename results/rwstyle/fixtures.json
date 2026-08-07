@@ -1,0 +1,122 @@
+{
+  "purpose": "measured sensitivity: geometry/mix main effect and the policy x mix interaction",
+  "map_seed": 11,
+  "orders": 100,
+  "n_draws": 4,
+  "SCALE_NOTE": "bars are steps/delivery at 100 orders/run; valid only for a comparison at the same scale (enforced)",
+  "fault_design": "pure map relabellings -- demand and request concurrency bit-identical, only placement moves",
+  "closed_form_expected_loaded_travel": {
+    "baseline": {
+      "all": 18.03096327556367,
+      "small": 18.08108108108108,
+      "large": 17.997672032828287,
+      "large_minus_small": -0.08340904825279338
+    },
+    "adversarial": {
+      "all": 24.743616491619058,
+      "small": 24.563884763884776,
+      "large": 24.863005050505052,
+      "large_minus_small": 0.29912028662027623
+    },
+    "benign": {
+      "all": 10.562649659783295,
+      "small": 10.742857142857146,
+      "large": 10.442945075757576,
+      "large_minus_small": -0.2999120670995694
+    },
+    "size_skew": {
+      "all": 20.06811446454397,
+      "small": 19.23653103653104,
+      "large": 20.620501893939405,
+      "large_minus_small": 1.3839708574083645
+    }
+  },
+  "null_abs_overall": [
+    0.08782861683662535,
+    0.16734948934340466,
+    0.22914986450940766,
+    0.148064806370785
+  ],
+  "null_abs_mix": [
+    0.16366453854481922,
+    0.6635844137109408,
+    0.14351508768987653,
+    0.40974972677522414
+  ],
+  "null_abs_interaction": [
+    0.0279147392239274,
+    0.2620689783422252,
+    0.4462859143303124,
+    0.0332177400675393
+  ],
+  "bar_overall": 0.2198798082345072,
+  "bar_mix": 0.6255092106705832,
+  "bar_interaction": 0.4186533739320992,
+  "bar_95pct": 0.4186533739320992,
+  "faults": {
+    "adversarial": {
+      "d_overall": [
+        1.8393495662581039,
+        1.6781532640816703,
+        1.9387840678440842,
+        1.679940425188689
+      ],
+      "d_interaction": [
+        -0.08970039465560742,
+        -0.16019372556043088,
+        -0.17534694940295115,
+        0.0398789595332909
+      ],
+      "mean_d_overall": 1.7840568308431368,
+      "mean_d_interaction": -0.09634052752142463,
+      "fires_overall": 4,
+      "fires_interaction": 0,
+      "n": 4
+    },
+    "benign": {
+      "d_overall": [
+        -2.299232391680416,
+        -2.280475209695232,
+        -2.121591736203391,
+        -2.3307357366887222
+      ],
+      "d_interaction": [
+        -0.34425852997633744,
+        0.25510581773678354,
+        -0.22136446930401021,
+        0.029285604726316805
+      ],
+      "mean_d_overall": -2.25800876856694,
+      "mean_d_interaction": -0.07030789420431183,
+      "fires_overall": 4,
+      "fires_interaction": 0,
+      "n": 4
+    },
+    "size_skew": {
+      "d_overall": [
+        1.2990522365573725,
+        0.9384186292946488,
+        0.846295842130214,
+        0.9574275793493383
+      ],
+      "d_interaction": [
+        0.15108588237029164,
+        0.43043341989791273,
+        -0.07170232868849347,
+        0.2019236363444028
+      ],
+      "mean_d_overall": 1.0102985718328934,
+      "mean_d_interaction": 0.17793515248102842,
+      "fires_overall": 4,
+      "fires_interaction": 1,
+      "n": 4
+    }
+  },
+  "sensitivity_overall": 2.0210327997050386,
+  "sensitivity_interaction": 0.17793515248102842,
+  "PASS": true,
+  "INTERPRETATION": "report any null as 'no detectable effect at a measured sensitivity of X steps/delivery'. The overall/mix/interaction bars are DIFFERENT BASES and must never be interchanged.",
+  "PASS_RULE_CORRECTION": "Original rule additionally required 0 null exceedances of a bar computed as the 95th percentile OF THE SAME null sample. For n<=20 numpy interpolates the 95th percentile strictly below the maximum, so >=1 exceedance is GUARANTEED -- the rule was mathematically unsatisfiable and the FAIL it produced on 2026-07-31 22:54 was spurious. Measurements are UNCHANGED; only the pass rule was corrected and PASS recomputed from the saved data. A real false-positive control needs an INDEPENDENT redraw set.",
+  "null_exceedances_same_sample_bar": 1,
+  "INTERACTION_UNDERPOWERED": "size_skew moves the closed-form large-minus-small differential by +1.47 steps/pick yet the measured interaction moved only +0.178 against a 0.419 bar, and the planted interaction fired 0/4, 0/4, 1/4. The policy x mix INTERACTION is NOT resolvable at this scale (~5x more draws needed). Any null interaction from the comparison is uninterpretable and must be reported as underpowered, not as absence of an interaction."
+}

@@ -1,0 +1,7 @@
+{
+  "relabel_leaves_excess_v_exact": true,
+  "relabel_moves_travel": true,
+  "closed_form_matches_estimator": true,
+  "tvd_quiet_on_identical": true,
+  "tvd_fires_on_planted": true
+}

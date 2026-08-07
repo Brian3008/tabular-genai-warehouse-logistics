@@ -1,0 +1,34 @@
+{
+  "dataname": "dunnhumby_season",
+  "frozen_window": [
+    35,
+    40
+  ],
+  "usable_weeks": [
+    16,
+    50
+  ],
+  "columns": [
+    "category",
+    "basket_size_grp",
+    "quantity",
+    "season_period"
+  ],
+  "excluded_week_of_year": true,
+  "basket_size_tertiles": [
+    13.0,
+    30.0
+  ],
+  "n_train": 540123,
+  "n_test": 59877,
+  "n_categories": 300,
+  "target_classes": {
+    "baseline": 0,
+    "window": 1
+  },
+  "season_period_proportions": {
+    "baseline": 0.824745,
+    "window": 0.175255
+  },
+  "NOTE_conditional": "TabSyn has no conditional API; season_period is learned as an ordinary column and generated rows are partitioned by it, exactly as order_size_grp was on the Instacart bench."
+}

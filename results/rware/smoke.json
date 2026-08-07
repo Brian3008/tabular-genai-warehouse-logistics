@@ -1,0 +1,59 @@
+{
+  "grid": [
+    20,
+    16
+  ],
+  "n_storage_cells": 144,
+  "n_highway_cells": 176,
+  "goals": [
+    [
+      7,
+      19
+    ],
+    [
+      8,
+      19
+    ]
+  ],
+  "storage_covers_aisles": true,
+  "every_storage_cell_has_shelf": true,
+  "map_fingerprints": {
+    "11": "8023f8a186410296",
+    "22": "2ad8c3a7443c9194",
+    "33": "5aab2c4593e16e5e"
+  },
+  "map_reproducible": true,
+  "maps_distinct": true,
+  "plan_unloaded": [
+    60,
+    60
+  ],
+  "plan_loaded": [
+    60,
+    60
+  ],
+  "n_real_orders": 4316,
+  "n_real_items": 42179,
+  "mini_episode": {
+    "valid": true,
+    "deadlock": false,
+    "reason": "completed",
+    "policy": "nearest",
+    "env_seed": 0,
+    "n_orders": 25,
+    "n_requested": 230,
+    "deliveries": 230,
+    "steps": 1456,
+    "steps_per_delivery": 6.3304347826086955,
+    "throughput_per_1k": 157.96703296703296,
+    "mean_order_completion": 584.8695652173913,
+    "orders_completed": 23,
+    "deferrals": 297,
+    "perturbations": 941,
+    "replans": 11231,
+    "env_assert_events": 0
+  },
+  "sec_per_1k_steps": 4.523,
+  "measured_steps_per_delivery": 6.3304347826086955,
+  "measured_sec_per_delivery": 0.0286
+}

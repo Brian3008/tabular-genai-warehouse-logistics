@@ -1,0 +1,53 @@
+# ---- environments -----------------------------------------------------
+.venv/
+.venv_*/
+__pycache__/
+*.pyc
+*.egg-info/
+.idea/
+
+# ---- datasets and model artifacts -------------------------------------
+# Raw Instacart / Dunnhumby data is licensed and must be downloaded from
+# Kaggle by the user. Trained models and generated CSVs are too large for
+# git. The small result JSONs in data/ ARE published -- they are the
+# artifacts of record behind the numbers quoted in the dissertation.
+data/*
+!data/*.json
+*.csv
+*.pkl
+*.pt
+*.npy
+*.npz
+
+# third-party: TabSyn is cloned separately, see README
+tabsyn_repo/
+
+# ---- training logs (tens of MB of stderr) -----------------------------
+*.log
+
+# ---- dissertation ------------------------------------------------------
+# Excluded until after submission: a public copy can be indexed and then
+# matched against the submitted version by plagiarism checkers.
+writeup/
+
+# ---- private working notes --------------------------------------------
+# Internal project log and assistant context. These contain supervisor
+# correspondence status, industry-contact names and personal career notes.
+# Not for publication.
+CLAUDE.md
+PROGRESS.md
+
+# ---- scratch -----------------------------------------------------------
+filelist.txt
+*.bak.docx
+project_scripts.zip
+# loose screenshots at repo root, mostly of the withdrawn v2 results.
+# The figures of record live in results/.
+Figure*.png
+FIgure*.png
+
+# demo run output - regenerated on every run
+results/demo_run/
+
+# power calculation output
+results/rwpower/

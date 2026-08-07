@@ -1,0 +1,141 @@
+{
+  "LIMITATION": "aisle->shelf map is a modeling abstraction, not a real warehouse layout; validity rests on it being IDENTICAL across conditions, not on physical realism",
+  "F1_bijection": {
+    "total": true,
+    "injective": true,
+    "in_range": true,
+    "reproducible_across_env": true,
+    "fingerprint": "8023f8a186410296",
+    "PASS": true
+  },
+  "F2_matching": {
+    "per_stream": {
+      "A_real_true": {
+        "n_orders": 120,
+        "n_items": 1188,
+        "size_vector_hash": 1385239466294857229,
+        "n_small": 85,
+        "n_large": 35,
+        "dup_rate": 0.287,
+        "distinct_aisles": 106
+      },
+      "B_real_pool": {
+        "n_orders": 120,
+        "n_items": 1188,
+        "size_vector_hash": 1385239466294857229,
+        "n_small": 85,
+        "n_large": 35,
+        "dup_rate": 0.1835,
+        "distinct_aisles": 113
+      },
+      "C_tabsyn": {
+        "n_orders": 120,
+        "n_items": 1188,
+        "size_vector_hash": 1385239466294857229,
+        "n_small": 85,
+        "n_large": 35,
+        "dup_rate": 0.1835,
+        "distinct_aisles": 114
+      },
+      "D_ctgan": {
+        "n_orders": 120,
+        "n_items": 1188,
+        "size_vector_hash": 1385239466294857229,
+        "n_small": 85,
+        "n_large": 35,
+        "dup_rate": 0.1448,
+        "distinct_aisles": 125
+      }
+    },
+    "PASS": true
+  },
+  "F3_repeatability": {
+    "exact_same_seed": true,
+    "seed_values": [
+      6.730639730639731,
+      6.941919191919192,
+      6.766835016835016,
+      6.880471380471381,
+      6.935185185185185,
+      6.80976430976431,
+      7.038720538720539,
+      6.962121212121212
+    ],
+    "mean": 6.883207070707071,
+    "sd": 0.09923538262901661,
+    "PASS": true
+  },
+  "F4_discrimination": {
+    "metric": "steps_per_delivery",
+    "null_diffs": [
+      0.09799859714072845,
+      0.020776942355889894,
+      0.36498576328221066,
+      0.29139421264011034,
+      0.0759347241954682,
+      0.0529914529914528,
+      0.07134262334883434,
+      0.48836119268127387,
+      0.0633411472697194,
+      0.2989468912368798
+    ],
+    "bar_95pct": 0.4328422494516953,
+    "baseline_mean": 6.883207070707071,
+    "aisle_travel_cost": {
+      "near40_mean": 10.7,
+      "far40_mean": 24.575
+    },
+    "faults": {
+      "far40": {
+        "mean": 8.61289983164983,
+        "mean_signed_diff": 1.7296927609427608,
+        "fires": 8,
+        "n": 8,
+        "fire_rate": 1.0,
+        "note": "farthest from goal"
+      },
+      "near40": {
+        "mean": 5.039321789321789,
+        "mean_signed_diff": -1.8605098605098607,
+        "fires": 7,
+        "n": 7,
+        "fire_rate": 1.0,
+        "note": "nearest to goal"
+      },
+      "five_aisle": {
+        "mean": 6.461279461279462,
+        "mean_signed_diff": -0.4219276094276093,
+        "fires": 5,
+        "n": 8,
+        "fire_rate": 0.625,
+        "note": "v1 fixture, kept as diagnostic"
+      }
+    },
+    "false_positive_rate": 0.0,
+    "fixture_note": "v1 used a 5-aisle fault which fired only 62%: it moves locality UP and concurrency DOWN and the two nearly cancel (the fleet got FASTER). v2 moves travel distance with concurrency held fixed at 40 aisles.",
+    "PASS": true
+  },
+  "F5_deadlock": {
+    "frozen": {
+      "deadlock": true,
+      "valid": false,
+      "reason": "inactivity_limit",
+      "deliveries": 0
+    },
+    "starved": {
+      "deadlock": true,
+      "valid": false,
+      "reason": "step_budget_exhausted",
+      "deliveries": 36
+    },
+    "healthy": {
+      "deadlock": false,
+      "valid": true,
+      "reason": "completed",
+      "deliveries": 1188
+    },
+    "PASS": true
+  },
+  "ALL_PASS": true,
+  "elapsed_sec": 1595.4
+}

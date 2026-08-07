@@ -1,0 +1,52 @@
+{
+  "epochs": 300,
+  "small_max": 10,
+  "large_min": 14,
+  "train_rows": 272820,
+  "quality": 0.9321666667108066,
+  "marginals_all_pass": false,
+  "marginals": [
+    {
+      "col": "aisle_id",
+      "real": 71.20309361483763,
+      "synth": 70.8845,
+      "diff": 0.3185936148376243,
+      "ok": false
+    },
+    {
+      "col": "order_dow",
+      "real": 2.7434755516457736,
+      "synth": 2.74398,
+      "diff": 0.0005044483542264722,
+      "ok": true
+    },
+    {
+      "col": "order_hour_of_day",
+      "real": 13.42313979913496,
+      "synth": 13.14422,
+      "diff": 0.27891979913495923,
+      "ok": true
+    },
+    {
+      "col": "is_reorder",
+      "real": 0.5939044058353493,
+      "synth": 0.54594,
+      "diff": 0.04796440583534933,
+      "ok": false
+    },
+    {
+      "col": "is_early_in_cart",
+      "real": 0.28642328275053147,
+      "synth": 0.31652,
+      "diff": 0.030096717249468552,
+      "ok": false
+    },
+    {
+      "col": "days_since_prior_order",
+      "real": 10.407052268895242,
+      "synth": 10.62444,
+      "diff": 0.21738773110475762,
+      "ok": true
+    }
+  ]
+}

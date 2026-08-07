@@ -1,0 +1,36 @@
+{
+  "known_answer_gate": {
+    "worst_abs_diff": 0.0,
+    "PASS": true,
+    "reproduced": {
+      "raw_observed": {
+        "recomputed": 0.08598415132924335,
+        "recorded": 0.08598415132924335
+      },
+      "raw_bar": {
+        "recomputed": 0.03586784253578732,
+        "recorded": 0.03586784253578732
+      },
+      "ctl_observed": {
+        "recomputed": 0.08417419369766134,
+        "recorded": 0.08417419369766134
+      },
+      "ctl_bar": {
+        "recomputed": 0.034153982394300474,
+        "recorded": 0.034153982394300474
+      },
+      "weekblock_frozen_tvd": {
+        "recomputed": 0.08773006134969324,
+        "recorded": 0.08773006134969324
+      },
+      "weekblock_bar": {
+        "recomputed": 0.08276406733724384,
+        "recorded": 0.08276406733724384
+      },
+      "category_shift_spearman": {
+        "recomputed": 0.7929627784305742,
+        "recorded": 0.7929627784305742
+      }
+    }
+  }
+}

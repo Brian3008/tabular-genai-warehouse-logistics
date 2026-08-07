@@ -1,0 +1,59 @@
+{
+  "planted": {
+    "m1_self_copy": {
+      "observed_mean": 1.0,
+      "observed_min": 1.0,
+      "observed_max": 1.0,
+      "null_mean": 0.0008812500000000001,
+      "bar_p95": 0.005,
+      "fires_above_bar": 10,
+      "n_draws": 10,
+      "verdict": "MEMORISING"
+    },
+    "m2_any_copy": {
+      "observed_mean": 1.0,
+      "observed_min": 1.0,
+      "observed_max": 1.0,
+      "null_mean": 0.07989609962406014,
+      "bar_p95": 0.10776942355889724,
+      "fires_above_bar": 10,
+      "n_draws": 10,
+      "verdict": "MEMORISING"
+    },
+    "m3_mset_copy": {
+      "observed_mean": 1.0,
+      "observed_min": 1.0,
+      "observed_max": 1.0,
+      "null_mean": 0.1272032111528822,
+      "bar_p95": 0.15501942355889722,
+      "fires_above_bar": 10,
+      "n_draws": 10,
+      "verdict": "MEMORISING"
+    }
+  },
+  "clean": {
+    "m2_any_copy": {
+      "observed_mean": 0.0885,
+      "observed_min": 0.0675,
+      "observed_max": 0.1075,
+      "null_mean": 0.09036874999999998,
+      "bar_p95": 0.11,
+      "fires_above_bar": 0,
+      "n_draws": 10,
+      "verdict": "at baseline"
+    },
+    "m3_mset_copy": {
+      "observed_mean": 0.13925,
+      "observed_min": 0.12,
+      "observed_max": 0.1525,
+      "null_mean": 0.13690625,
+      "bar_p95": 0.16,
+      "fires_above_bar": 0,
+      "n_draws": 10,
+      "verdict": "at baseline"
+    }
+  },
+  "pass": true,
+  "n_draws": 10,
+  "n_baskets": 400
+}

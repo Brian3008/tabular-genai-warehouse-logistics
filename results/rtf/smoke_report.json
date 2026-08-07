@@ -1,0 +1,95 @@
+{
+  "gates": {
+    "G1 environment": {
+      "pass": true,
+      "detail": "cuda=True cap=(12, 0) transformers=4.57.6"
+    },
+    "G2 data + dtypes": {
+      "pass": true,
+      "detail": "categoricals=object:True dspo=float:True join:True"
+    },
+    "G3 parent fit": {
+      "pass": true,
+      "detail": "48 steps"
+    },
+    "G4 child fit": {
+      "pass": true,
+      "detail": "48 steps"
+    },
+    "G4b zero baskets dropped by output_max_length": {
+      "pass": true,
+      "detail": "no removal warning"
+    },
+    "G5 sampling": {
+      "pass": true,
+      "detail": ""
+    },
+    "G7 item-discard rate": {
+      "pass": true,
+      "detail": "none"
+    },
+    "G8 flatten": {
+      "pass": true,
+      "detail": "355 rows"
+    },
+    "G6 order preserved": {
+      "pass": true,
+      "detail": "100.0% sorted vs 0.83% chance"
+    }
+  },
+  "timing": {
+    "parent_sec_per_step": 0.10632892946402232,
+    "parent_rows_smoke": 2000,
+    "child_sec_per_step": 0.3522041787703832,
+    "child_examples_smoke": 2000,
+    "step_formula_verified": true,
+    "steps_per_epoch_full": 217,
+    "projection_hours": {
+      "parent": {
+        "10": 0.06409271581581345,
+        "25": 0.16023178953953365,
+        "50": 0.3204635790790673,
+        "75": 0.4806953686186009,
+        "100": 0.6409271581581346,
+        "150": 0.9613907372372018,
+        "200": 1.2818543163162692
+      },
+      "child": {
+        "10": 0.21230085220325873,
+        "25": 0.5307521305081468,
+        "50": 1.0615042610162937,
+        "75": 1.5922563915244408,
+        "100": 2.1230085220325874,
+        "150": 3.1845127830488815,
+        "200": 4.246017044065175
+      },
+      "combined": {
+        "10": 0.27639356801907217,
+        "25": 0.6909839200476805,
+        "50": 1.381967840095361,
+        "75": 2.0729517601430416,
+        "100": 2.763935680190722,
+        "150": 4.145903520286083,
+        "200": 5.527871360381444
+      }
+    },
+    "batch_size": 32,
+    "gradient_accumulation_steps": 4
+  },
+  "notes": [],
+  "versions": {
+    "python": "3.10.11",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6",
+    "datasets": "4.5.0",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3"
+  },
+  "relational_max_length": 215,
+  "discarded_items_smoke": 0,
+  "order_gate": {
+    "sorted_rate": 1.0,
+    "n_baskets": 150,
+    "chance_rate": 0.008333333333333333
+  }
+}

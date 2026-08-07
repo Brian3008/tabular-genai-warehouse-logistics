@@ -1,0 +1,271 @@
+{
+  "rows": [
+    {
+      "epoch": 25,
+      "n_matching": 2,
+      "f1_aisle_tvd": {
+        "observed_mean": 0.13720594498182576,
+        "observed_min": 0.11884969669737137,
+        "observed_max": 0.16845621570031016,
+        "null_mean": 0.08055152042060666,
+        "bar_p95": 0.09273110950703367,
+        "fires_below_bar": 0,
+        "n_draws": 10,
+        "verdict": "DIFFERS"
+      },
+      "f2_size_tvd": {
+        "observed_mean": 0.15699999999999997,
+        "observed_min": 0.095,
+        "observed_max": 0.2075,
+        "null_mean": 0.14054375,
+        "bar_p95": 0.17500000000000002,
+        "fires_below_bar": 6,
+        "n_draws": 10,
+        "verdict": "MATCHES REAL"
+      },
+      "f3_is_reorder": {
+        "observed_mean": 0.08501091843964563,
+        "observed_min": 0.04740292486132125,
+        "observed_max": 0.11708099438652764,
+        "null_mean": 0.009056890862602404,
+        "bar_p95": 0.0222923149742465,
+        "fires_below_bar": 0,
+        "n_draws": 10,
+        "verdict": "DIFFERS"
+      },
+      "f4_is_early_in_cart": {
+        "observed_mean": 0.012528229060511343,
+        "observed_min": 0.0007682458386683577,
+        "observed_max": 0.031453605931251405,
+        "null_mean": 0.00796422952554125,
+        "bar_p95": 0.019685088707389605,
+        "fires_below_bar": 8,
+        "n_draws": 10,
+        "verdict": "MATCHES REAL"
+      }
+    },
+    {
+      "epoch": 50,
+      "n_matching": 3,
+      "f1_aisle_tvd": {
+        "observed_mean": 0.11780463941907224,
+        "observed_min": 0.0978124214231833,
+        "observed_max": 0.13074819786229186,
+        "null_mean": 0.08011735441311267,
+        "bar_p95": 0.09057829175388625,
+        "fires_below_bar": 0,
+        "n_draws": 10,
+        "verdict": "DIFFERS"
+      },
+      "f2_size_tvd": {
+        "observed_mean": 0.13925,
+        "observed_min": 0.095,
+        "observed_max": 0.17,
+        "null_mean": 0.143125,
+        "bar_p95": 0.17750000000000002,
+        "fires_below_bar": 10,
+        "n_draws": 10,
+        "verdict": "MATCHES REAL"
+      },
+      "f3_is_reorder": {
+        "observed_mean": 0.012551630101436473,
+        "observed_min": 0.003726708074534235,
+        "observed_max": 0.019361327633894865,
+        "null_mean": 0.008827882115092967,
+        "bar_p95": 0.021922697932928094,
+        "fires_below_bar": 10,
+        "n_draws": 10,
+        "verdict": "MATCHES REAL"
+      },
+      "f4_is_early_in_cart": {
+        "observed_mean": 0.013316785182013046,
+        "observed_min": 0.0017825311942958888,
+        "observed_max": 0.03553062178588129,
+        "null_mean": 0.007673664088984125,
+        "bar_p95": 0.017930227021879786,
+        "fires_below_bar": 8,
+        "n_draws": 10,
+        "verdict": "MATCHES REAL"
+      }
+    },
+    {
+      "epoch": 75,
+      "n_matching": 2,
+      "f1_aisle_tvd": {
+        "observed_mean": 0.11480575927440109,
+        "observed_min": 0.10316674913409205,
+        "observed_max": 0.1270732329675938,
+        "null_mean": 0.08209340452959606,
+        "bar_p95": 0.09411452810180276,
+        "fires_below_bar": 0,
+        "n_draws": 10,
+        "verdict": "DIFFERS"
+      },
+      "f2_size_tvd": {
+        "observed_mean": 0.14600000000000002,
+        "observed_min": 0.11000000000000001,
+        "observed_max": 0.19749999999999998,
+        "null_mean": 0.14069375,
+        "bar_p95": 0.17750000000000002,
+        "fires_below_bar": 9,
+        "n_draws": 10,
+        "verdict": "MATCHES REAL"
+      },
+      "f3_is_reorder": {
+        "observed_mean": 0.0314741335551869,
+        "observed_min": 0.0050994390617031815,
+        "observed_max": 0.06713399838231326,
+        "null_mean": 0.008847705058307257,
+        "bar_p95": 0.021220164318975637,
+        "fires_below_bar": 3,
+        "n_draws": 10,
+        "verdict": "DIFFERS"
+      },
+      "f4_is_early_in_cart": {
+        "observed_mean": 0.012220953150199438,
+        "observed_min": 0.0018162947586922162,
+        "observed_max": 0.03399301513387659,
+        "null_mean": 0.008012477579128515,
+        "bar_p95": 0.019305523708379107,
+        "fires_below_bar": 8,
+        "n_draws": 10,
+        "verdict": "MATCHES REAL"
+      }
+    },
+    {
+      "epoch": 100,
+      "n_matching": 1,
+      "f1_aisle_tvd": {
+        "observed_mean": 0.1033060771386802,
+        "observed_min": 0.09450707603741904,
+        "observed_max": 0.11903648269410665,
+        "null_mean": 0.07787050173732156,
+        "bar_p95": 0.08898521162672104,
+        "fires_below_bar": 0,
+        "n_draws": 10,
+        "verdict": "DIFFERS"
+      },
+      "f2_size_tvd": {
+        "observed_mean": 0.15500000000000003,
+        "observed_min": 0.1275,
+        "observed_max": 0.19250000000000003,
+        "null_mean": 0.14282499999999998,
+        "bar_p95": 0.1775,
+        "fires_below_bar": 7,
+        "n_draws": 10,
+        "verdict": "MATCHES REAL"
+      },
+      "f3_is_reorder": {
+        "observed_mean": 0.02019441146788231,
+        "observed_min": 0.003118253777884439,
+        "observed_max": 0.043131739334270947,
+        "null_mean": 0.008967656186155195,
+        "bar_p95": 0.01996603278110165,
+        "fires_below_bar": 5,
+        "n_draws": 10,
+        "verdict": "DIFFERS"
+      },
+      "f4_is_early_in_cart": {
+        "observed_mean": 0.020660338963999426,
+        "observed_min": 0.0025785278949835844,
+        "observed_max": 0.04238032498902067,
+        "null_mean": 0.007453449938748219,
+        "bar_p95": 0.01802166541987445,
+        "fires_below_bar": 5,
+        "n_draws": 10,
+        "verdict": "DIFFERS"
+      }
+    },
+    {
+      "epoch": 200,
+      "n_matching": 3,
+      "f1_aisle_tvd": {
+        "observed_mean": 0.09404388086052909,
+        "observed_min": 0.08237822349570201,
+        "observed_max": 0.11006678209250556,
+        "null_mean": 0.0807237168886531,
+        "bar_p95": 0.09302325581395349,
+        "fires_below_bar": 4,
+        "n_draws": 10,
+        "verdict": "DIFFERS"
+      },
+      "f2_size_tvd": {
+        "observed_mean": 0.15828571428571428,
+        "observed_min": 0.135,
+        "observed_max": 0.23000000000000004,
+        "null_mean": 0.14298529135338348,
+        "bar_p95": 0.17999999999999997,
+        "fires_below_bar": 8,
+        "n_draws": 10,
+        "verdict": "MATCHES REAL"
+      },
+      "f3_is_reorder": {
+        "observed_mean": 0.023247588058138813,
+        "observed_min": 0.0022750252780586733,
+        "observed_max": 0.0625,
+        "null_mean": 0.008966585180049757,
+        "bar_p95": 0.021046528238299656,
+        "fires_below_bar": 6,
+        "n_draws": 10,
+        "verdict": "MATCHES REAL"
+      },
+      "f4_is_early_in_cart": {
+        "observed_mean": 0.017558274410829345,
+        "observed_min": 0.0022260697501854665,
+        "observed_max": 0.02554918815663798,
+        "null_mean": 0.007803256819201666,
+        "bar_p95": 0.020291577289824073,
+        "fires_below_bar": 7,
+        "n_draws": 10,
+        "verdict": "MATCHES REAL"
+      }
+    },
+    {
+      "epoch": 300,
+      "n_matching": 4,
+      "f1_aisle_tvd": {
+        "observed_mean": 0.0898479988026148,
+        "observed_min": 0.07215777262180974,
+        "observed_max": 0.11157635467980295,
+        "null_mean": 0.08110819125579014,
+        "bar_p95": 0.0931443193860876,
+        "fires_below_bar": 7,
+        "n_draws": 10,
+        "verdict": "MATCHES REAL"
+      },
+      "f2_size_tvd": {
+        "observed_mean": 0.16099999999999998,
+        "observed_min": 0.11499999999999999,
+        "observed_max": 0.215,
+        "null_mean": 0.1425875,
+        "bar_p95": 0.17999999999999997,
+        "fires_below_bar": 7,
+        "n_draws": 10,
+        "verdict": "MATCHES REAL"
+      },
+      "f3_is_reorder": {
+        "observed_mean": 0.012541021921841599,
+        "observed_min": 0.00046403712296994026,
+        "observed_max": 0.04795991410164635,
+        "null_mean": 0.009231950681406647,
+        "bar_p95": 0.022480073502405305,
+        "fires_below_bar": 9,
+        "n_draws": 10,
+        "verdict": "MATCHES REAL"
+      },
+      "f4_is_early_in_cart": {
+        "observed_mean": 0.016637520025877484,
+        "observed_min": 0.0012794268167860556,
+        "observed_max": 0.03253502033438771,
+        "null_mean": 0.007692039376116333,
+        "bar_p95": 0.0194770423291405,
+        "fires_below_bar": 6,
+        "n_draws": 10,
+        "verdict": "MATCHES REAL"
+      }
+    }
+  ],
+  "seed": 20260727,
+  "n_draws": 10,
+  "n_baskets": 400
+}

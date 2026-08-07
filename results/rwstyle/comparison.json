@@ -1,0 +1,312 @@
+{
+  "config": {
+    "orders": 100,
+    "draws": 8,
+    "maps": [
+      11,
+      22
+    ],
+    "policies": [
+      "nearest",
+      "random"
+    ],
+    "mixes": {
+      "small_heavy": 0.8,
+      "large_heavy": 0.2
+    },
+    "streams": [
+      "A_real_true",
+      "B_real_pool",
+      "C_tabsyn",
+      "D_ctgan",
+      "NULL_pool"
+    ],
+    "n_episodes": 320,
+    "elapsed_s": 8445.056641578674
+  },
+  "power_fixture": {
+    "bar_overall": 0.2198798082345072,
+    "bar_mix": 0.6255092106705832,
+    "bar_interaction": 0.4186533739320992,
+    "sensitivity_overall": 2.0210327997050386,
+    "sensitivity_interaction": 0.17793515248102842,
+    "closed_form_expected_loaded_travel": {
+      "baseline": {
+        "all": 18.03096327556367,
+        "small": 18.08108108108108,
+        "large": 17.997672032828287,
+        "large_minus_small": -0.08340904825279338
+      },
+      "adversarial": {
+        "all": 24.743616491619058,
+        "small": 24.563884763884776,
+        "large": 24.863005050505052,
+        "large_minus_small": 0.29912028662027623
+      },
+      "benign": {
+        "all": 10.562649659783295,
+        "small": 10.742857142857146,
+        "large": 10.442945075757576,
+        "large_minus_small": -0.2999120670995694
+      },
+      "size_skew": {
+        "all": 20.06811446454397,
+        "small": 19.23653103653104,
+        "large": 20.620501893939405,
+        "large_minus_small": 1.3839708574083645
+      }
+    },
+    "faults": {
+      "adversarial": {
+        "fires_overall": 4,
+        "n": 4,
+        "mean_d_overall": 1.7840568308431368
+      },
+      "benign": {
+        "fires_overall": 4,
+        "n": 4,
+        "mean_d_overall": -2.25800876856694
+      },
+      "size_skew": {
+        "fires_overall": 4,
+        "n": 4,
+        "mean_d_overall": 1.0102985718328934
+      }
+    }
+  },
+  "measured_bar_stream_contrast_POOLED": 0.5568056458752835,
+  "measured_bar_stream_contrast_PER_CELL": {
+    "small_heavy|nearest": 0.691621183694354,
+    "small_heavy|random": 0.5289854321652814,
+    "large_heavy|nearest": 0.4860666044419577,
+    "large_heavy|random": 0.5193408442213523
+  },
+  "BAR_NOTE": "pooled and per-cell bars are DIFFERENT BASES; quote which one a fire rate came from, never mix them",
+  "null_mean": 0.2677188092577717,
+  "Q_style": {
+    "A_real_true": {
+      "policy_effect_by_mix": {
+        "small_heavy": -0.768606246986342,
+        "large_heavy": -0.640372078212591
+      },
+      "interaction_mean": 0.12823416877375104,
+      "interaction_draws": [
+        0.08344658874694222,
+        -0.3333781081161753,
+        0.28286888215456774,
+        -0.10801678223294164,
+        -0.3623076329658623,
+        0.2771619768413025,
+        -0.05062823355506296,
+        -0.2422163262200927,
+        0.7507137724904185,
+        -0.19659711650398481,
+        0.24161433467968507,
+        0.500097186741348,
+        0.48627488611796377,
+        0.4203588945141581,
+        0.37730968218773064,
+        -0.07495530449998
+      ],
+      "fires_vs_fixture_bar": 4,
+      "n_draws": 16,
+      "fire_rate": 0.25
+    },
+    "B_real_pool": {
+      "policy_effect_by_mix": {
+        "small_heavy": -0.6997356143645164,
+        "large_heavy": -0.6971329050195187
+      },
+      "interaction_mean": 0.0026027093449976224,
+      "interaction_draws": [
+        0.14245529308393934,
+        -0.29061669800901413,
+        -0.08290820100480012,
+        0.07162398383658886,
+        -0.04500151466401725,
+        0.06235182110954085,
+        -0.025340513145390986,
+        -0.15671003081136625,
+        0.12695773834733526,
+        0.07705292379332018,
+        -0.15895730091215743,
+        0.025233512632954813,
+        -0.22193496917047462,
+        0.0939126788543696,
+        0.358621053743005,
+        0.06490357183612883
+      ],
+      "fires_vs_fixture_bar": 0,
+      "n_draws": 16,
+      "fire_rate": 0.0
+    },
+    "C_tabsyn": {
+      "policy_effect_by_mix": {
+        "small_heavy": -0.6219912263911511,
+        "large_heavy": -0.6568482823928856
+      },
+      "interaction_mean": -0.03485705600173461,
+      "interaction_draws": [
+        0.1696639843570571,
+        0.06536521297871722,
+        -0.005093697872114333,
+        0.16554538290253795,
+        -0.29692306823890746,
+        -0.09225053188015675,
+        -0.2702460141484533,
+        0.18568602837688708,
+        -0.34495597261642175,
+        -0.4150547744843429,
+        -0.1302525677247477,
+        -0.422966615362645,
+        0.11980898299248643,
+        0.2878772568388275,
+        0.022806461830851887,
+        0.4032770360226703
+      ],
+      "fires_vs_fixture_bar": 1,
+      "n_draws": 16,
+      "fire_rate": 0.0625
+    },
+    "D_ctgan": {
+      "policy_effect_by_mix": {
+        "small_heavy": -0.7037559151126827,
+        "large_heavy": -0.6651536839727394
+      },
+      "interaction_mean": 0.0386022311399431,
+      "interaction_draws": [
+        0.23276674020366972,
+        0.45098803020805267,
+        -0.17654558257977726,
+        -0.12038131581591927,
+        -0.040498917156345016,
+        -0.024539695960460683,
+        0.025393305881110884,
+        -0.25397504659743575,
+        0.23044474084000743,
+        0.34470911316080244,
+        -0.35127447647739984,
+        -0.14915718600087935,
+        0.05868241164616794,
+        0.5469075336227309,
+        -0.02270087635941298,
+        -0.13318308037582227
+      ],
+      "fires_vs_fixture_bar": 2,
+      "n_draws": 16,
+      "fire_rate": 0.125
+    },
+    "NULL_pool": {
+      "policy_effect_by_mix": {
+        "small_heavy": -0.5745509697020532,
+        "large_heavy": -0.7266782817536834
+      },
+      "interaction_mean": -0.15212731205163016,
+      "interaction_draws": [
+        -0.43684140660063076,
+        -0.16662935434763249,
+        -0.23531477106632348,
+        -0.8712817807255551,
+        0.09194857292307645,
+        -0.007945035040505033,
+        -0.10748600992503388,
+        -0.10447335387424328,
+        0.1286939701764256,
+        -0.32131876660398273,
+        -0.4218064447409038,
+        -0.07887927158867925,
+        -0.34381932410235017,
+        0.16333859198691236,
+        0.24406081723154927,
+        0.03371657347179369
+      ],
+      "fires_vs_fixture_bar": 3,
+      "n_draws": 16,
+      "fire_rate": 0.1875
+    }
+  },
+  "Q_fidelity": {
+    "small_heavy|nearest": {
+      "A_real_true": {
+        "mean_diff": -0.21966869225709273,
+        "fires": 3,
+        "n": 16,
+        "fire_rate": 0.1875
+      },
+      "C_tabsyn": {
+        "mean_diff": 0.03485285216421202,
+        "fires": 2,
+        "n": 16,
+        "fire_rate": 0.125
+      },
+      "D_ctgan": {
+        "mean_diff": -0.001083670066539144,
+        "fires": 0,
+        "n": 16,
+        "fire_rate": 0.0
+      }
+    },
+    "small_heavy|random": {
+      "A_real_true": {
+        "mean_diff": -0.1507980596352671,
+        "fires": 2,
+        "n": 16,
+        "fire_rate": 0.125
+      },
+      "C_tabsyn": {
+        "mean_diff": -0.04289153580915328,
+        "fires": 0,
+        "n": 16,
+        "fire_rate": 0.0
+      },
+      "D_ctgan": {
+        "mean_diff": 0.0029366306816270837,
+        "fires": 0,
+        "n": 16,
+        "fire_rate": 0.0
+      }
+    },
+    "large_heavy|nearest": {
+      "A_real_true": {
+        "mean_diff": -0.11824172090075302,
+        "fires": 1,
+        "n": 16,
+        "fire_rate": 0.0625
+      },
+      "C_tabsyn": {
+        "mean_diff": 0.044523949855773515,
+        "fires": 0,
+        "n": 16,
+        "fire_rate": 0.0
+      },
+      "D_ctgan": {
+        "mean_diff": -0.16203204466684745,
+        "fires": 1,
+        "n": 16,
+        "fire_rate": 0.0625
+      }
+    },
+    "large_heavy|random": {
+      "A_real_true": {
+        "mean_diff": -0.1750025477076808,
+        "fires": 3,
+        "n": 16,
+        "fire_rate": 0.1875
+      },
+      "C_tabsyn": {
+        "mean_diff": 0.004239327229140444,
+        "fires": 1,
+        "n": 16,
+        "fire_rate": 0.0625
+      },
+      "D_ctgan": {
+        "mean_diff": -0.1940112657136267,
+        "fires": 0,
+        "n": 16,
+        "fire_rate": 0.0
+      }
+    }
+  },
+  "deadlocks": [],
+  "HOW_TO_CITE": "Report fire rates against the measured bars. A null interaction means 'no detectable interaction at a measured sensitivity of +0.178 steps/delivery', NEVER 'no interaction'. The overall/mix/interaction bars are DIFFERENT BASES; say which one a fire rate used."
+}

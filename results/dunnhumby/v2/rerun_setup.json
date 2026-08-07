@@ -1,0 +1,33 @@
+{
+  "purpose": "full-protocol (4000-epoch) VAE rerun, isolated dataname",
+  "src_dataname": "dunnhumby_season",
+  "dst_dataname": "dunnhumby_season_v2",
+  "data_is_bit_identical": true,
+  "only_variable_under_test": "VAE training length (650 -> 4000 epochs)",
+  "hyperparameters": "repo defaults, unchanged (LR 1e-3, D_TOKEN 4, max_beta 1e-2, min_beta 1e-5, lambd 0.7)",
+  "sha256_16": {
+    "X_cat_train.npy": "fdc8b8a0c20b8988",
+    "X_cat_test.npy": "3b4fced2b805cb0d",
+    "X_num_train.npy": "c3a57a5b98c63c32",
+    "X_num_test.npy": "5641eef1e4ec94cd",
+    "y_train.npy": "97da0fd2ea9b4aad",
+    "y_test.npy": "e109773a3587cbc8",
+    "train.csv": "666612f73d43d8df",
+    "prep_manifest.json": "02c53c063776dc0a"
+  },
+  "original_ckpt_sha256_16_verified": "5094d9ec664fc803",
+  "evidence_rerun_is_justified": {
+    "warehouse_vae_completed_4000": true,
+    "warehouse_reason": "post-loop artifacts (encoder/decoder/train_z) exist and vae/main.py has no break -- only exit is 4000 epochs",
+    "warehouse_last_val_improvement_frac_of_run": 0.39,
+    "dunnhumby_last_val_improvement_frac_of_run": 1.0,
+    "dunnhumby_interpretation": "still improving when killed"
+  },
+  "measured_cost": {
+    "s_per_epoch_wall_clock": 13.35,
+    "basis": "8694 s / 651 completed epochs, Jul 29 20:56:55->23:21:49",
+    "projected_hours_4000_epochs": 14.84,
+    "vae_can_resume": false,
+    "resume_evidence": "no torch.load / load_state_dict on the training path in tabsyn/vae/main.py; Model_VAE built fresh at line 105"
+  }
+}

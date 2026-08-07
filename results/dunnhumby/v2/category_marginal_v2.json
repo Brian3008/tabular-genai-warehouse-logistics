@@ -1,0 +1,209 @@
+{
+  "synth_csv": "data/dunnhumby/v2/synthetic_season_v2.csv",
+  "dataname": "dunnhumby_season_v2",
+  "BASIS": "fitted training table; floor = 95th pct of 20 disjoint half-splits; observed size-matched over 10 draws; TVD is size-dependent so these are NOT interchangeable with any figure measured at a different n",
+  "n_real": 540123,
+  "n_synth": 600000,
+  "n_categories": 300,
+  "floor": {
+    "draws": [
+      0.01466335383487435,
+      0.015589070617379037,
+      0.013774665723669834,
+      0.013896860338960457,
+      0.013930186143130624,
+      0.01629631823921262,
+      0.014544862086713743,
+      0.01393388901026065,
+      0.014926257401105678,
+      0.01474851977886477,
+      0.01548909320486853,
+      0.014881822995545455,
+      0.012619371179103982,
+      0.015848271316480353,
+      0.014804062785815059,
+      0.013763557122279777,
+      0.013952403345910741,
+      0.0143189871917826,
+      0.013119258241656509,
+      0.013363647472237755
+    ],
+    "mean": 0.014423222901492627,
+    "sd": 0.0009388128061964357,
+    "bar_95pct": 0.015870673662616967,
+    "n_splits": 20,
+    "n_per_side": 270061
+  },
+  "observed": {
+    "draws": [
+      0.046169113331592994,
+      0.046541250789172095,
+      0.04654865650972093,
+      0.0464838564549186,
+      0.046491262175467445,
+      0.046765273835774446,
+      0.04639869066860696,
+      0.0463079705918837,
+      0.046528290778211634,
+      0.04628575343023719
+    ],
+    "mean": 0.046452011856558596,
+    "sd": 0.000168349655424227,
+    "n_per_side": 540123,
+    "fires": 10,
+    "n_draws": 10,
+    "fire_rate": 1.0
+  },
+  "ratio_to_floor": 2.9269086394218613,
+  "structure": {
+    "verdict": "systematic_shift",
+    "categories_absent": 0,
+    "categories_near_zero": 0,
+    "top20_MOST_COMMON_share_of_tvd_pct": 27.452125284996505,
+    "rarest100_share_of_tvd_pct": 5.300717144770222,
+    "entropy_real": 4.854743615601301,
+    "entropy_synth": 4.829376650420899,
+    "top20_contributors": [
+      {
+        "category": "FROZEN PIZZA",
+        "real_pct": 1.687023141025285,
+        "synth_pct": 2.0338333333333334,
+        "diff_pp": 0.3468101923080485,
+        "tvd_contrib": 0.0017340509615402424
+      },
+      {
+        "category": "BEEF",
+        "real_pct": 1.8449501317292543,
+        "synth_pct": 2.1793333333333336,
+        "diff_pp": 0.3343832016040792,
+        "tvd_contrib": 0.0016719160080203958
+      },
+      {
+        "category": "FLUID MILK PRODUCTS",
+        "real_pct": 3.354976551637312,
+        "synth_pct": 3.6471666666666667,
+        "diff_pp": 0.2921901150293546,
+        "tvd_contrib": 0.001460950575146773
+      },
+      {
+        "category": "CANDY - CHECKLANE",
+        "real_pct": 1.3106273941305961,
+        "synth_pct": 1.5531666666666666,
+        "diff_pp": 0.24253927253607038,
+        "tvd_contrib": 0.001212696362680352
+      },
+      {
+        "category": "SOUP",
+        "real_pct": 1.9523330796874045,
+        "synth_pct": 1.7601666666666669,
+        "diff_pp": -0.19216641302073761,
+        "tvd_contrib": 0.0009608320651036881
+      },
+      {
+        "category": "FRZN POTATOES",
+        "real_pct": 0.3847271825121315,
+        "synth_pct": 0.5735,
+        "diff_pp": 0.18877281748786848,
+        "tvd_contrib": 0.0009438640874393424
+      },
+      {
+        "category": "VEGETABLES - ALL OTHERS",
+        "real_pct": 0.7713057951614725,
+        "synth_pct": 0.6021666666666666,
+        "diff_pp": -0.16913912849480586,
+        "tvd_contrib": 0.0008456956424740293
+      },
+      {
+        "category": "VEGETABLES - SHELF STABLE",
+        "real_pct": 1.6820242796548195,
+        "synth_pct": 1.5236666666666667,
+        "diff_pp": -0.1583576129881527,
+        "tvd_contrib": 0.0007917880649407636
+      },
+      {
+        "category": "BABY FOODS",
+        "real_pct": 0.7581606411872851,
+        "synth_pct": 0.9138333333333334,
+        "diff_pp": 0.15567269214604823,
+        "tvd_contrib": 0.0007783634607302411
+      },
+      {
+        "category": "SOFT DRINKS",
+        "real_pct": 4.510083814242312,
+        "synth_pct": 4.364833333333333,
+        "diff_pp": -0.14525048090897816,
+        "tvd_contrib": 0.0007262524045448908
+      },
+      {
+        "category": "COUPON/MISC ITEMS",
+        "real_pct": 1.1134500845177857,
+        "synth_pct": 0.9683333333333334,
+        "diff_pp": -0.1451167511844523,
+        "tvd_contrib": 0.0007255837559222615
+      },
+      {
+        "category": "BACON",
+        "real_pct": 0.45341524060260346,
+        "synth_pct": 0.31583333333333335,
+        "diff_pp": -0.1375819072692701,
+        "tvd_contrib": 0.0006879095363463506
+      },
+      {
+        "category": "VEGETABLES SALAD",
+        "real_pct": 0.45230438252027777,
+        "synth_pct": 0.316,
+        "diff_pp": -0.13630438252027777,
+        "tvd_contrib": 0.0006815219126013888
+      },
+      {
+        "category": "TOMATOES",
+        "real_pct": 0.5713513403428478,
+        "synth_pct": 0.6966666666666667,
+        "diff_pp": 0.1253153263238189,
+        "tvd_contrib": 0.0006265766316190945
+      },
+      {
+        "category": "BEERS/ALES",
+        "real_pct": 0.6887320110419293,
+        "synth_pct": 0.5638333333333334,
+        "diff_pp": -0.12489867770859595,
+        "tvd_contrib": 0.0006244933885429797
+      },
+      {
+        "category": "COOKIES/CONES",
+        "real_pct": 0.8716533085982267,
+        "synth_pct": 0.9964999999999999,
+        "diff_pp": 0.12484669140177332,
+        "tvd_contrib": 0.0006242334570088666
+      },
+      {
+        "category": "DELI MEATS",
+        "real_pct": 0.9631139573763754,
+        "synth_pct": 0.8515,
+        "diff_pp": -0.11161395737637539,
+        "tvd_contrib": 0.0005580697868818769
+      },
+      {
+        "category": "CANNED JUICES",
+        "real_pct": 1.1352969601368577,
+        "synth_pct": 1.2468333333333332,
+        "diff_pp": 0.11153637319647555,
+        "tvd_contrib": 0.0005576818659823778
+      },
+      {
+        "category": "CHEESE",
+        "real_pct": 2.9424779170670385,
+        "synth_pct": 3.0513333333333335,
+        "diff_pp": 0.10885541626629476,
+        "tvd_contrib": 0.0005442770813314738
+      },
+      {
+        "category": "SALAD MIX",
+        "real_pct": 0.6259685293905277,
+        "synth_pct": 0.5233333333333334,
+        "diff_pp": -0.10263519605719432,
+        "tvd_contrib": 0.0005131759802859716
+      }
+    ]
+  }
+}

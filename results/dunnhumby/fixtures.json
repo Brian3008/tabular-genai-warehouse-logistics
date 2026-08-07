@@ -1,0 +1,72 @@
+{
+  "F1_flat": {
+    "mean_size_window": 6.944483240223463,
+    "mean_size_baseline": 7.003832323996972,
+    "raw": {
+      "observed_mean": 0.038156424581005585,
+      "bar": 0.048726256983240214,
+      "fires": 0,
+      "n_draws": 10,
+      "effect": false,
+      "expected": false,
+      "PASS": true
+    },
+    "size-controlled": {
+      "observed_mean": 0.03851207924795309,
+      "bar": 0.04663903770342666,
+      "fires": 0,
+      "n_draws": 10,
+      "effect": false,
+      "expected": false,
+      "PASS": true
+    },
+    "PASS": true
+  },
+  "F2_real_seasonal": {
+    "mean_size_window": 6.944483240223463,
+    "mean_size_baseline": 7.003832323996972,
+    "raw": {
+      "observed_mean": 0.2310391061452514,
+      "bar": 0.047201117318435744,
+      "fires": 10,
+      "n_draws": 10,
+      "effect": true,
+      "expected": true,
+      "PASS": true
+    },
+    "size-controlled": {
+      "observed_mean": 0.23192156069948444,
+      "bar": 0.04591630445769736,
+      "fires": 10,
+      "n_draws": 10,
+      "effect": true,
+      "expected": true,
+      "PASS": true
+    },
+    "PASS": true
+  },
+  "F3_size_driven": {
+    "mean_size_window": 12.002437325905293,
+    "mean_size_baseline": 5.988971980310488,
+    "raw": {
+      "observed_mean": 0.3210173425311069,
+      "bar": 0.03565534137064019,
+      "fires": 10,
+      "n_draws": 10,
+      "effect": true,
+      "expected": true,
+      "PASS": true
+    },
+    "size-controlled": {
+      "observed_mean": 0.04912887352041494,
+      "bar": 0.052141242186460955,
+      "fires": 2,
+      "n_draws": 10,
+      "effect": false,
+      "expected": false,
+      "PASS": true
+    },
+    "PASS": true
+  },
+  "ALL_PASS": true
+}

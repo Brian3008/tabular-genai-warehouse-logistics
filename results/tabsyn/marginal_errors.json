@@ -1,0 +1,278 @@
+{
+  "purpose": "single-basis marginal errors for CTGAN v3 and TabSyn",
+  "created": "2026-07-27",
+  "basis_primary": {
+    "reference": "data/v3_train.csv, order_size_grp recomputed at 10/14, mid dropped (the population both generators were fitted to)",
+    "n_real_pop": 272820
+  },
+  "basis_secondary": {
+    "reference": "data/v3_eval.csv, same 10/14 mid-drop",
+    "n_real_pop": 8547
+  },
+  "design": {
+    "n_null_draws": 40,
+    "n_test_draws": 10,
+    "percentile": 95,
+    "seed": 42,
+    "matched_n": "one n_side used on every side of null AND observed draws",
+    "rule": "column FAILS if |rate error| exceeds the measured bar on a majority of draws"
+  },
+  "known_answer_gate": {
+    "is_reorder": {
+      "recorded": 0.048,
+      "reproduced": 0.04796440583534933,
+      "abs_diff": 3.5594164650668e-05,
+      "ok": true
+    },
+    "is_early_in_cart": {
+      "recorded": 0.03,
+      "reproduced": 0.030096717249468552,
+      "abs_diff": 9.671724946855309e-05,
+      "ok": true
+    }
+  },
+  "selftest": {
+    "clean_quiet": true,
+    "planted_caught": true,
+    "untouched_column_unaffected": true,
+    "passed": true
+  },
+  "training_basis": {
+    "ctgan": {
+      "n_side": 50000,
+      "n_real_pop": 272820,
+      "n_synth_pop": 50000,
+      "bar": {
+        "is_reorder": 0.0049159999999999135,
+        "is_early_in_cart": 0.005318999999999973
+      },
+      "bar_mean": {
+        "is_reorder": 0.0027639999999999913,
+        "is_early_in_cart": 0.0022275000000000046
+      },
+      "per_column": {
+        "is_reorder": {
+          "real_rate_full": 0.5939044058353493,
+          "synth_rate_full": 0.54594,
+          "point_estimate": 0.04796440583534933,
+          "observed_draws": [
+            0.04608000000000001,
+            0.05030000000000001,
+            0.04952000000000001,
+            0.05064000000000002,
+            0.04618,
+            0.048960000000000004,
+            0.05364000000000002,
+            0.048900000000000055,
+            0.04927999999999999,
+            0.04818
+          ],
+          "observed_mean": 0.04916800000000001,
+          "fire_rate": 1.0,
+          "fails": true
+        },
+        "is_early_in_cart": {
+          "real_rate_full": 0.28642328275053147,
+          "synth_rate_full": 0.31652,
+          "point_estimate": 0.030096717249468552,
+          "observed_draws": [
+            0.030460000000000043,
+            0.02796000000000004,
+            0.030480000000000007,
+            0.030000000000000027,
+            0.03152000000000005,
+            0.031700000000000006,
+            0.029960000000000042,
+            0.030100000000000016,
+            0.02942,
+            0.029920000000000002
+          ],
+          "observed_mean": 0.030152000000000023,
+          "fire_rate": 1.0,
+          "fails": true
+        }
+      }
+    },
+    "tabsyn": {
+      "n_side": 50000,
+      "n_real_pop": 272820,
+      "n_synth_pop": 50000,
+      "bar": {
+        "is_reorder": 0.0049159999999999135,
+        "is_early_in_cart": 0.005318999999999973
+      },
+      "bar_mean": {
+        "is_reorder": 0.0027639999999999913,
+        "is_early_in_cart": 0.0022275000000000046
+      },
+      "per_column": {
+        "is_reorder": {
+          "real_rate_full": 0.5939044058353493,
+          "synth_rate_full": 0.5823,
+          "point_estimate": 0.011604405835349274,
+          "observed_draws": [
+            0.009719999999999951,
+            0.013939999999999952,
+            0.01315999999999995,
+            0.01427999999999996,
+            0.00981999999999994,
+            0.012599999999999945,
+            0.017279999999999962,
+            0.012539999999999996,
+            0.012919999999999932,
+            0.011819999999999942
+          ],
+          "observed_mean": 0.012807999999999953,
+          "fire_rate": 1.0,
+          "fails": true
+        },
+        "is_early_in_cart": {
+          "real_rate_full": 0.28642328275053147,
+          "synth_rate_full": 0.296,
+          "point_estimate": 0.009576717249468514,
+          "observed_draws": [
+            0.009940000000000004,
+            0.007440000000000002,
+            0.009959999999999969,
+            0.009479999999999988,
+            0.01100000000000001,
+            0.011179999999999968,
+            0.009440000000000004,
+            0.009579999999999977,
+            0.008899999999999963,
+            0.009399999999999964
+          ],
+          "observed_mean": 0.009631999999999984,
+          "fire_rate": 1.0,
+          "fails": true
+        }
+      }
+    }
+  },
+  "held_out_eval_basis": {
+    "ctgan": {
+      "n_side": 4273,
+      "n_real_pop": 8547,
+      "n_synth_pop": 50000,
+      "bar": {
+        "is_reorder": 0.017832904282705363,
+        "is_early_in_cart": 0.016428738591153756
+      },
+      "bar_mean": {
+        "is_reorder": 0.009033465948981976,
+        "is_early_in_cart": 0.008307980341680326
+      },
+      "per_column": {
+        "is_reorder": {
+          "real_rate_full": 0.6054756054756055,
+          "synth_rate_full": 0.54594,
+          "point_estimate": 0.059535605475605546,
+          "observed_draws": [
+            0.03814650128715191,
+            0.045869412590685665,
+            0.06131523519775339,
+            0.0734846711912005,
+            0.07769716826585538,
+            0.06201731804352906,
+            0.05359232389421942,
+            0.04352913643809975,
+            0.07301661596068332,
+            0.049379826819564765
+          ],
+          "observed_mean": 0.057804820968874314,
+          "fire_rate": 1.0,
+          "fails": true
+        },
+        "is_early_in_cart": {
+          "real_rate_full": 0.28524628524628526,
+          "synth_rate_full": 0.31652,
+          "point_estimate": 0.031273714753714765,
+          "observed_draws": [
+            0.05569857243154697,
+            0.03487011467353146,
+            0.012637491223964403,
+            0.03838052890241045,
+            0.011935408378188628,
+            0.03276386613620408,
+            0.036040252749824475,
+            0.02036040252749821,
+            0.02691317575473906,
+            0.042827053592323916
+          ],
+          "observed_mean": 0.031242686637023166,
+          "fire_rate": 0.8,
+          "fails": true
+        }
+      }
+    },
+    "tabsyn": {
+      "n_side": 4273,
+      "n_real_pop": 8547,
+      "n_synth_pop": 50000,
+      "bar": {
+        "is_reorder": 0.017832904282705363,
+        "is_early_in_cart": 0.016428738591153756
+      },
+      "bar_mean": {
+        "is_reorder": 0.009033465948981976,
+        "is_early_in_cart": 0.008307980341680326
+      },
+      "per_column": {
+        "is_reorder": {
+          "real_rate_full": 0.6054756054756055,
+          "synth_rate_full": 0.5823,
+          "point_estimate": 0.023175605475605487,
+          "observed_draws": [
+            0.00842499414930964,
+            0.016615960683360576,
+            0.023870816756377256,
+            0.013807629300257362,
+            0.0320617832904283,
+            0.02925345190732498,
+            0.021530540603791226,
+            0.03744441844137614,
+            0.027849286215773428,
+            0.025977065293704693
+          ],
+          "observed_mean": 0.02368359466417036,
+          "fire_rate": 0.7,
+          "fails": true
+        },
+        "is_early_in_cart": {
+          "real_rate_full": 0.28524628524628526,
+          "synth_rate_full": 0.296,
+          "point_estimate": 0.010753714753714727,
+          "observed_draws": [
+            0.02948747952258368,
+            0.011701380762930036,
+            0.010999297917154205,
+            0.019190264451205197,
+            0.0072548560730166245,
+            0.02246665106482565,
+            0.01872220922068807,
+            0.011467353147671389,
+            0.004680552305172003,
+            0.00842499414930964
+          ],
+          "observed_mean": 0.01443950386145565,
+          "fire_rate": 0.4,
+          "fails": false
+        }
+      }
+    }
+  },
+  "ctgan_over_tabsyn_error_ratio": {
+    "training": {
+      "is_reorder": 4.133292692094622,
+      "is_early_in_cart": 3.142696653296186
+    },
+    "held_out_eval": {
+      "is_reorder": 2.568891049611299,
+      "is_early_in_cart": 2.908177822264783
+    }
+  },
+  "scored_files": {
+    "ctgan": "data/synthetic_v3.csv",
+    "tabsyn": "data/tabsyn/synthetic_tabsyn.csv"
+  }
+}

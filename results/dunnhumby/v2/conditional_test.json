@@ -1,0 +1,156 @@
+{
+  "known_answer_gate": {
+    "worst_abs_diff": 0.0,
+    "PASS": true,
+    "reproduced": {
+      "raw_observed": {
+        "recomputed": 0.08598415132924335,
+        "recorded": 0.08598415132924335
+      },
+      "raw_bar": {
+        "recomputed": 0.03586784253578732,
+        "recorded": 0.03586784253578732
+      },
+      "ctl_observed": {
+        "recomputed": 0.08417419369766134,
+        "recorded": 0.08417419369766134
+      },
+      "ctl_bar": {
+        "recomputed": 0.034153982394300474,
+        "recorded": 0.034153982394300474
+      },
+      "weekblock_frozen_tvd": {
+        "recomputed": 0.08773006134969324,
+        "recorded": 0.08773006134969324
+      },
+      "weekblock_bar": {
+        "recomputed": 0.08276406733724384,
+        "recorded": 0.08276406733724384
+      },
+      "category_shift_spearman": {
+        "recomputed": 0.7929627784305742,
+        "recorded": 0.7929627784305742
+      }
+    }
+  },
+  "category_coverage": {
+    "K_real_train": 300,
+    "n_synth_categories": 300,
+    "n_invented": 0,
+    "frac_synth_rows_in_real_categories": 1.0,
+    "coverage_of_real_categories": 1.0
+  },
+  "common_basis": {
+    "per_group_budget": {
+      "small": 16562,
+      "mid": 14461,
+      "large": 16264
+    },
+    "items_per_side": 47287,
+    "n_week_blocks": 30
+  },
+  "week_block_bar_item_level": {
+    "bar_95pct": 0.07908163624956824,
+    "frozen_window_tvd": 0.09178703096693241,
+    "rank": 1,
+    "n_blocks": 30,
+    "gate_basket_clustered_bar": 0.08276406733724384,
+    "NOTE": "item-level basis; NOT interchangeable with the gate bar"
+  },
+  "tvd": {
+    "real_train": {
+      "tvd_mean": 0.09037367564023939,
+      "tvd_sd": 0.002385453313748448,
+      "tvd_draws": [
+        0.09095523082453952,
+        0.08835409309112442,
+        0.091526212278216,
+        0.08738130987374966,
+        0.0882695032461353,
+        0.08820606086239348,
+        0.09156850720071055,
+        0.09148391735572144,
+        0.09588258929515511,
+        0.09010933237464844
+      ],
+      "fires_vs_week_block_bar": 10,
+      "n_draws": 10,
+      "fire_rate": 1.0
+    },
+    "real_full": {
+      "tvd_mean": 0.09070780552794637,
+      "tvd_sd": 0.0016640794686207465,
+      "tvd_draws": [
+        0.08951720345972466,
+        0.0933871888679764,
+        0.08771966925370608,
+        0.09218178357688159,
+        0.08852327278110263,
+        0.09241440565060163,
+        0.0907860511345613,
+        0.09103982066952862,
+        0.09044769175460486,
+        0.09106096813077588
+      ],
+      "fires_vs_week_block_bar": 10,
+      "n_draws": 10,
+      "fire_rate": 1.0
+    },
+    "synth": {
+      "tvd_mean": 0.07330767441368664,
+      "tvd_sd": 0.0017932311450304882,
+      "tvd_draws": [
+        0.07059022564341152,
+        0.07344513291179394,
+        0.07020957134096052,
+        0.07403726182671772,
+        0.07211284285321547,
+        0.07657495717639097,
+        0.0738469346754922,
+        0.07448135851291053,
+        0.07359316514052489,
+        0.07418529405544864
+      ],
+      "fires_vs_week_block_bar": 0,
+      "n_draws": 10,
+      "fire_rate": 0.0
+    }
+  },
+  "direction": {
+    "spearman_synth_vs_real": 0.6680880005494964,
+    "agreement_bar_95pct_arbitrary_blocks": 0.7420133054756739,
+    "null_rho_mean": 0.019231586105109815,
+    "real_year1_vs_year2_ceiling": 0.7929627784305742,
+    "exceeds_agreement_bar": false,
+    "real_top10_risers": [
+      "BAKING NEEDS",
+      "CHRISTMAS  SEASONAL",
+      "REFRGRATD DOUGH PRODUCTS",
+      "SUGARS/SWEETNERS",
+      "FROZEN PIE/DESSERTS",
+      "CHEESE",
+      "FLUID MILK PRODUCTS",
+      "SPICES & EXTRACTS",
+      "VEGETABLES - SHELF STABLE",
+      "SOUP"
+    ],
+    "synth_top10_risers": [
+      "BAKING NEEDS",
+      "REFRGRATD DOUGH PRODUCTS",
+      "VEGETABLES - SHELF STABLE",
+      "BREAKFAST SAUSAGE/SANDWICHES",
+      "CHRISTMAS  SEASONAL",
+      "FROZEN PIE/DESSERTS",
+      "CITRUS",
+      "SOUP",
+      "FLUID MILK PRODUCTS",
+      "MARGARINES"
+    ],
+    "top10_overlap": 7
+  },
+  "verdict": {
+    "magnitude_fires_majority": false,
+    "direction_exceeds_bar": false,
+    "VERDICT": "MISSES"
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "synth_csv": "data/dunnhumby/synthetic_season.csv",
+  "dataname": "dunnhumby_season",
+  "BASIS": "fitted training table; floor = 95th pct of 20 disjoint half-splits; observed size-matched over 10 draws; TVD is size-dependent so these are NOT interchangeable with any figure measured at a different n",
+  "n_real": 540123,
+  "n_synth": 600000,
+  "n_categories": 300,
+  "floor": {
+    "draws": [
+      0.01466335383487435,
+      0.015589070617379037,
+      0.013774665723669834,
+      0.013896860338960457,
+      0.013930186143130624,
+      0.01629631823921262,
+      0.014544862086713743,
+      0.01393388901026065,
+      0.014926257401105678,
+      0.01474851977886477,
+      0.01548909320486853,
+      0.014881822995545455,
+      0.012619371179103982,
+      0.015848271316480353,
+      0.014804062785815059,
+      0.013763557122279777,
+      0.013952403345910741,
+      0.0143189871917826,
+      0.013119258241656509,
+      0.013363647472237755
+    ],
+    "mean": 0.014423222901492627,
+    "sd": 0.0009388128061964357,
+    "bar_95pct": 0.015870673662616967,
+    "n_splits": 20,
+    "n_per_side": 270061
+  },
+  "observed": {
+    "draws": [
+      0.1401143813538768,
+      0.1407586790416257,
+      0.14011067849360237,
+      0.14024213003334424,
+      0.1405772388881792,
+      0.14043653019775126,
+      0.14056613030735593,
+      0.14039950159500705,
+      0.1408734677101327,
+      0.14062352464160943
+    ],
+    "mean": 0.14047022622624847,
+    "sd": 0.0002590632359579936,
+    "n_per_side": 540123,
+    "fires": 10,
+    "n_draws": 10,
+    "fire_rate": 1.0
+  },
+  "ratio_to_floor": 8.850930288934306,
+  "structure": {
+    "verdict": "systematic_shift",
+    "categories_absent": 0,
+    "categories_near_zero": 0,
+    "top20_share_of_tvd_pct": 18.65792490993097,
+    "rarest100_share_of_tvd_pct": 10.721983025477709,
+    "entropy_real": 4.854743615601301,
+    "entropy_synth": 4.898036676605146,
+    "top20_contributors": [
+      {
+        "category": "FRZN MEAT/MEAT DINNERS",
+        "real_pct": 2.1628406862881233,
+        "synth_pct": 2.9135,
+        "diff_pp": 0.750659313711877,
+        "tvd_contrib": 0.003753296568559385
+      },
+      {
+        "category": "SOFT DRINKS",
+        "real_pct": 4.510083814242312,
+        "synth_pct": 3.7603333333333335,
+        "diff_pp": -0.7497504809089777,
+        "tvd_contrib": 0.003748752404544888
+      },
+      {
+        "category": "CONVENIENT BRKFST/WHLSM SNACKS",
+        "real_pct": 0.870542450515901,
+        "synth_pct": 0.26366666666666666,
+        "diff_pp": -0.6068757838492344,
+        "tvd_contrib": 0.0030343789192461717
+      },
+      {
+        "category": "DINNER MXS:DRY",
+        "real_pct": 0.7868578083140322,
+        "synth_pct": 1.2538333333333334,
+        "diff_pp": 0.4669755250193012,
+        "tvd_contrib": 0.0023348776250965058
+      },
+      {
+        "category": "MEAT - SHELF STABLE",
+        "real_pct": 0.9264556406596276,
+        "synth_pct": 1.3878333333333333,
+        "diff_pp": 0.4613776926737057,
+        "tvd_contrib": 0.0023068884633685284
+      },
+      {
+        "category": "BAKED SWEET GOODS",
+        "real_pct": 1.0784580549245264,
+        "synth_pct": 0.6361666666666667,
+        "diff_pp": -0.44229138825785974,
+        "tvd_contrib": 0.0022114569412892988
+      },
+      {
+        "category": "DELI MEATS",
+        "real_pct": 0.9631139573763754,
+        "synth_pct": 0.5565,
+        "diff_pp": -0.4066139573763754,
+        "tvd_contrib": 0.002033069786881877
+      },
+      {
+        "category": "FLOUR & MEALS",
+        "real_pct": 0.14311554960629336,
+        "synth_pct": 0.5246666666666667,
+        "diff_pp": 0.3815511170603733,
+        "tvd_contrib": 0.0019077555853018666
+      },
+      {
+        "category": "CRACKERS/MISC BKD FD",
+        "real_pct": 1.1514044023305803,
+        "synth_pct": 0.777,
+        "diff_pp": -0.37440440233058025,
+        "tvd_contrib": 0.0018720220116529014
+      },
+      {
+        "category": "POTATOES",
+        "real_pct": 0.6348553940491333,
+        "synth_pct": 0.28683333333333333,
+        "diff_pp": -0.3480220607157999,
+        "tvd_contrib": 0.0017401103035789994
+      },
+      {
+        "category": "BAKED BREAD/BUNS/ROLLS",
+        "real_pct": 3.180386689698458,
+        "synth_pct": 3.527333333333333,
+        "diff_pp": 0.3469466436348753,
+        "tvd_contrib": 0.0017347332181743766
+      },
+      {
+        "category": "CONDIMENTS/SAUCES",
+        "real_pct": 0.8736898817491571,
+        "synth_pct": 0.528,
+        "diff_pp": -0.3456898817491571,
+        "tvd_contrib": 0.0017284494087457854
+      },
+      {
+        "category": "APPLES",
+        "real_pct": 0.5732027704800574,
+        "synth_pct": 0.22899999999999998,
+        "diff_pp": -0.3442027704800574,
+        "tvd_contrib": 0.0017210138524002868
+      },
+      {
+        "category": "COLD CEREAL",
+        "real_pct": 1.4763303914108452,
+        "synth_pct": 1.1376666666666666,
+        "diff_pp": -0.33866372474417855,
+        "tvd_contrib": 0.0016933186237208927
+      },
+      {
+        "category": "FROZEN PIZZA",
+        "real_pct": 1.687023141025285,
+        "synth_pct": 2.0205,
+        "diff_pp": 0.33347685897471524,
+        "tvd_contrib": 0.0016673842948735761
+      },
+      {
+        "category": "DRY NOODLES/PASTA",
+        "real_pct": 0.686510294877278,
+        "synth_pct": 0.35833333333333334,
+        "diff_pp": -0.3281769615439446,
+        "tvd_contrib": 0.0016408848077197231
+      },
+      {
+        "category": "VEGETABLES SALAD",
+        "real_pct": 0.45230438252027777,
+        "synth_pct": 0.12583333333333332,
+        "diff_pp": -0.3264710491869444,
+        "tvd_contrib": 0.001632355245934722
+      },
+      {
+        "category": "HAIR CARE PRODUCTS",
+        "real_pct": 0.4850746959488857,
+        "synth_pct": 0.15916666666666665,
+        "diff_pp": -0.325908029282219,
+        "tvd_contrib": 0.0016295401464110951
+      },
+      {
+        "category": "YOGURT",
+        "real_pct": 1.741084901031802,
+        "synth_pct": 2.0491666666666664,
+        "diff_pp": 0.3080817656348645,
+        "tvd_contrib": 0.0015404088281743226
+      },
+      {
+        "category": "FLUID MILK PRODUCTS",
+        "real_pct": 3.354976551637312,
+        "synth_pct": 3.662333333333333,
+        "diff_pp": 0.30735678169602143,
+        "tvd_contrib": 0.001536783908480107
+      }
+    ]
+  }
+}

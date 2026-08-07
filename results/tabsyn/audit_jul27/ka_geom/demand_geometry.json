@@ -1,0 +1,93 @@
+{
+  "source": "csv",
+  "synthetic_csv": "data/synthetic_v3.csv",
+  "generated_proportions": {
+    "training": {
+      "small": 0.3976541309288175,
+      "large": 0.6023458690711825
+    },
+    "generated": {
+      "large": 0.58398,
+      "small": 0.41602
+    }
+  },
+  "n_common": 8417,
+  "floor": {
+    "small": {
+      "tvd_bar": 0.06147677319710111,
+      "tvd_mean": 0.05715516217179517,
+      "gini_bar": 0.012526285804361157,
+      "gini_mean": 0.005340840820709939,
+      "travel_bar": 0.01080423256774519,
+      "travel_mean": 0.005360480526771544
+    },
+    "large": {
+      "tvd_bar": 0.06169656647261494,
+      "tvd_mean": 0.05576511821314008,
+      "gini_bar": 0.012855798320298895,
+      "gini_mean": 0.004603683824550328,
+      "travel_bar": 0.012099271942043592,
+      "travel_mean": 0.0053858327951688025
+    }
+  },
+  "floor_check": "all 12 stats equal recorded data/demand_geometry.json to <=1e-9",
+  "results": {
+    "small": {
+      "tvd": 0.1003920636806463,
+      "gini_real": 0.6509844149810529,
+      "gini_syn": 0.5767742610459642,
+      "gini_err": 0.07421015393508867,
+      "travel_real": 43.59552043726236,
+      "travel_syn": 43.16906289607097,
+      "travel_err": 0.009782141305208136,
+      "top_real": [
+        24,
+        83,
+        123,
+        120,
+        84
+      ],
+      "top_syn": [
+        24,
+        83,
+        115,
+        84,
+        123
+      ],
+      "ok_tvd": false,
+      "ok_gini": false,
+      "ok_travel": true
+    },
+    "large": {
+      "tvd": 0.11856956160152073,
+      "gini_real": 0.6682474113744162,
+      "gini_syn": 0.5802356283215029,
+      "gini_err": 0.08801178305291335,
+      "travel_real": 43.95557667934093,
+      "travel_syn": 44.98243029150823,
+      "travel_err": 0.023361168018753826,
+      "top_real": [
+        83,
+        24,
+        123,
+        120,
+        21
+      ],
+      "top_syn": [
+        24,
+        83,
+        123,
+        120,
+        21
+      ],
+      "ok_tvd": false,
+      "ok_gini": false,
+      "ok_travel": false
+    }
+  },
+  "travel_gap_real": 0.3600562420785707,
+  "travel_gap_syn": 1.813367395437261,
+  "gap_ratio": 5.03634483593136,
+  "gini_gap_ratio": 0.20050790700908633,
+  "all_ok": false
+}

@@ -1,0 +1,10 @@
+{
+  "clean_passes": true,
+  "range_blind_to_67_5": true,
+  "set_catches_67_5": true,
+  "coverage_catches_collapse": true,
+  "stability_passes_clean": true,
+  "stability_catches_drift": true,
+  "scale_passes_clean": true,
+  "scale_catches_shift": true
+}

@@ -1,0 +1,19 @@
+{
+  "map_seed": 11,
+  "orders": 150,
+  "n_draws": 4,
+  "near60_cost": 12.233333333333333,
+  "far60_cost": 35.233333333333334,
+  "null_abs_diffs": [
+    0.139956490210297,
+    0.0,
+    0.12519440124416903,
+    0.2557280118255729
+  ],
+  "bar_95pct": 0.2383622835832815,
+  "planted_shift_mean": 2.453140416246458,
+  "planted_fires": 4,
+  "planted_n": 4,
+  "PASS": true,
+  "INTERPRETATION": "a null result means 'no detectable effect at a measured sensitivity of +2.453 steps/delivery', never 'no effect'"
+}

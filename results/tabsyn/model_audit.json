@@ -1,0 +1,23 @@
+{
+  "audited_file": "data/tabsyn/synthetic_tabsyn.csv",
+  "draws": [
+    "data/tabsyn/draw1.csv",
+    "data/tabsyn/draw2.csv",
+    "data/tabsyn/draw3.csv",
+    "data/tabsyn/draw4.csv",
+    "data/tabsyn/draw5.csv"
+  ],
+  "scale_pair": [
+    "data/tabsyn/draw_small_5k.csv",
+    "data/tabsyn/synthetic_tabsyn.csv"
+  ],
+  "training_proportions": {
+    "small": 0.3976541309288175,
+    "large": 0.6023458690711825
+  },
+  "generated_proportions": {
+    "large": 0.59982,
+    "small": 0.40018
+  },
+  "issues": []
+}

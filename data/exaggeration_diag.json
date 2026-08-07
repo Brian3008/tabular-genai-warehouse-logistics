@@ -1,0 +1,43 @@
+[
+  {
+    "label": "(A) FORCED 50/50 - as diagnose_v3 did",
+    "tvd": 0.1660309307497128,
+    "tvd_sc": 0.16082970488630866,
+    "recovery": 1.2808906825356836,
+    "recovery_sc": 1.31479933419613,
+    "gaps": {
+      "is_reorder": 0.06536666666666657,
+      "is_early_in_cart": 0.3853666666666667,
+      "order_hour_of_day": 0.13030000000000008
+    }
+  },
+  {
+    "label": "(A') NATURAL 40/60 proportions",
+    "tvd": 0.16429536976559497,
+    "tvd_sc": 0.1541862124982047,
+    "recovery": 1.2675012262247976,
+    "recovery_sc": 1.2604881024818713,
+    "gaps": {
+      "is_reorder": 0.06616001281121675,
+      "is_early_in_cart": 0.3825334267420191,
+      "order_hour_of_day": 0.11324903457239976
+    }
+  },
+  {
+    "label": "(B) unconditional",
+    "tvd": 0.16482304554858296,
+    "recovery": 1.2715721242844364
+  },
+  {
+    "label": "30-epoch model, forced 50/50",
+    "tvd": 0.144879717322135,
+    "tvd_sc": 0.15136635622332562,
+    "recovery": 1.1177139052847682,
+    "recovery_sc": 1.2374354881942264,
+    "gaps": {
+      "is_reorder": 0.07690000000000008,
+      "is_early_in_cart": 0.37836666666666663,
+      "order_hour_of_day": 0.11539999999999928
+    }
+  }
+]

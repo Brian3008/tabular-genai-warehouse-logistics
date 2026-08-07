@@ -1,0 +1,439 @@
+{
+  "rows": [
+    {
+      "checkpoint": "D:\\GenAI for Warehouse\\data\\rtf\\train_ckpt\\child\\checkpoint-5425",
+      "step": 5425,
+      "epoch": 25.0,
+      "seconds": 132.82898378372192,
+      "m1_self_copy": {
+        "observed_mean": 0.0,
+        "observed_min": 0.0,
+        "observed_max": 0.0,
+        "null_mean": 0.00145625,
+        "bar_p95": 0.005,
+        "fires_above_bar": 0,
+        "n_draws": 10,
+        "verdict": "at baseline"
+      },
+      "m2_any_copy": {
+        "observed_mean": 0.10200000000000001,
+        "observed_min": 0.0825,
+        "observed_max": 0.1175,
+        "null_mean": 0.08794934346028566,
+        "bar_p95": 0.11058068118369624,
+        "fires_above_bar": 1,
+        "n_draws": 10,
+        "verdict": "at baseline"
+      },
+      "m3_mset_copy": {
+        "observed_mean": 0.15975,
+        "observed_min": 0.1375,
+        "observed_max": 0.18,
+        "null_mean": 0.13471786078911105,
+        "bar_p95": 0.16084462717628542,
+        "fires_above_bar": 5,
+        "n_draws": 10,
+        "verdict": "at baseline"
+      }
+    },
+    {
+      "checkpoint": "D:\\GenAI for Warehouse\\data\\rtf\\train_ckpt\\child\\checkpoint-10850",
+      "step": 10850,
+      "epoch": 50.0,
+      "seconds": 138.04547357559204,
+      "m1_self_copy": {
+        "observed_mean": 0.00025,
+        "observed_min": 0.0,
+        "observed_max": 0.0025,
+        "null_mean": 0.001789058564231738,
+        "bar_p95": 0.005001889168765742,
+        "fires_above_bar": 0,
+        "n_draws": 10,
+        "verdict": "at baseline"
+      },
+      "m2_any_copy": {
+        "observed_mean": 0.09983501259445846,
+        "observed_min": 0.0825,
+        "observed_max": 0.12,
+        "null_mean": 0.08189389831548313,
+        "bar_p95": 0.10075566750629723,
+        "fires_above_bar": 5,
+        "n_draws": 10,
+        "verdict": "at baseline"
+      },
+      "m3_mset_copy": {
+        "observed_mean": 0.1716360201511335,
+        "observed_min": 0.15,
+        "observed_max": 0.1875,
+        "null_mean": 0.130789858873549,
+        "bar_p95": 0.15365239294710328,
+        "fires_above_bar": 9,
+        "n_draws": 10,
+        "verdict": "MEMORISING"
+      }
+    },
+    {
+      "checkpoint": "D:\\GenAI for Warehouse\\data\\rtf\\train_ckpt\\child\\checkpoint-16275",
+      "step": 16275,
+      "epoch": 75.0,
+      "seconds": 114.37436723709106,
+      "m1_self_copy": {
+        "observed_mean": 0.0,
+        "observed_min": 0.0,
+        "observed_max": 0.0,
+        "null_mean": 0.00136875,
+        "bar_p95": 0.005,
+        "fires_above_bar": 0,
+        "n_draws": 10,
+        "verdict": "at baseline"
+      },
+      "m2_any_copy": {
+        "observed_mean": 0.13325,
+        "observed_min": 0.1175,
+        "observed_max": 0.15,
+        "null_mean": 0.08272919765932667,
+        "bar_p95": 0.10275689223057644,
+        "fires_above_bar": 10,
+        "n_draws": 10,
+        "verdict": "MEMORISING"
+      },
+      "m3_mset_copy": {
+        "observed_mean": 0.22175000000000003,
+        "observed_min": 0.2,
+        "observed_max": 0.245,
+        "null_mean": 0.13271060767006893,
+        "bar_p95": 0.15789473684210525,
+        "fires_above_bar": 10,
+        "n_draws": 10,
+        "verdict": "MEMORISING"
+      }
+    },
+    {
+      "checkpoint": "D:\\GenAI for Warehouse\\data\\rtf\\train_ckpt\\child\\checkpoint-21700",
+      "step": 21700,
+      "epoch": 100.0,
+      "seconds": 111.75187039375305,
+      "m1_self_copy": {
+        "observed_mean": 0.001,
+        "observed_min": 0.0,
+        "observed_max": 0.005,
+        "null_mean": 0.001637625313283208,
+        "bar_p95": 0.0075,
+        "fires_above_bar": 0,
+        "n_draws": 10,
+        "verdict": "at baseline"
+      },
+      "m2_any_copy": {
+        "observed_mean": 0.23405012531328323,
+        "observed_min": 0.20050125313283207,
+        "observed_max": 0.27,
+        "null_mean": 0.07619536803211506,
+        "bar_p95": 0.10776942355889724,
+        "fires_above_bar": 10,
+        "n_draws": 10,
+        "verdict": "MEMORISING"
+      },
+      "m3_mset_copy": {
+        "observed_mean": 0.3470770676691729,
+        "observed_min": 0.3082706766917293,
+        "observed_max": 0.3975,
+        "null_mean": 0.11968312081400492,
+        "bar_p95": 0.15751973684210524,
+        "fires_above_bar": 10,
+        "n_draws": 10,
+        "verdict": "MEMORISING"
+      }
+    },
+    {
+      "checkpoint": "D:\\GenAI for Warehouse\\data\\rtf\\train_ckpt\\child\\checkpoint-27125",
+      "step": 27125,
+      "epoch": 125.0,
+      "seconds": 112.90881705284119,
+      "m1_self_copy": {
+        "observed_mean": 0.00225,
+        "observed_min": 0.0,
+        "observed_max": 0.0075,
+        "null_mean": 0.0011625000000000001,
+        "bar_p95": 0.005,
+        "fires_above_bar": 1,
+        "n_draws": 10,
+        "verdict": "at baseline"
+      },
+      "m2_any_copy": {
+        "observed_mean": 0.3035,
+        "observed_min": 0.2525,
+        "observed_max": 0.33,
+        "null_mean": 0.05800146356342828,
+        "bar_p95": 0.07520690896005755,
+        "fires_above_bar": 10,
+        "n_draws": 10,
+        "verdict": "MEMORISING"
+      },
+      "m3_mset_copy": {
+        "observed_mean": 0.4225,
+        "observed_min": 0.4,
+        "observed_max": 0.445,
+        "null_mean": 0.09824145724437615,
+        "bar_p95": 0.12531328320802004,
+        "fires_above_bar": 10,
+        "n_draws": 10,
+        "verdict": "MEMORISING"
+      }
+    },
+    {
+      "checkpoint": "D:\\GenAI for Warehouse\\data\\rtf\\train_ckpt\\child\\checkpoint-32550",
+      "step": 32550,
+      "epoch": 150.0,
+      "seconds": 107.44397163391113,
+      "m1_self_copy": {
+        "observed_mean": 0.00225,
+        "observed_min": 0.0,
+        "observed_max": 0.005,
+        "null_mean": 0.0012312500000000001,
+        "bar_p95": 0.005,
+        "fires_above_bar": 0,
+        "n_draws": 10,
+        "verdict": "at baseline"
+      },
+      "m2_any_copy": {
+        "observed_mean": 0.3945,
+        "observed_min": 0.3525,
+        "observed_max": 0.4275,
+        "null_mean": 0.0639663583424642,
+        "bar_p95": 0.0829145728643216,
+        "fires_above_bar": 10,
+        "n_draws": 10,
+        "verdict": "MEMORISING"
+      },
+      "m3_mset_copy": {
+        "observed_mean": 0.4965,
+        "observed_min": 0.4725,
+        "observed_max": 0.52,
+        "null_mean": 0.10786725938590194,
+        "bar_p95": 0.13316582914572864,
+        "fires_above_bar": 10,
+        "n_draws": 10,
+        "verdict": "MEMORISING"
+      }
+    },
+    {
+      "checkpoint": "D:\\GenAI for Warehouse\\data\\rtf\\train_ckpt\\child\\checkpoint-37975",
+      "step": 37975,
+      "epoch": 175.0,
+      "seconds": 118.62913370132446,
+      "m1_self_copy": {
+        "observed_mean": 0.005254392262062191,
+        "observed_min": 0.0025,
+        "observed_max": 0.01,
+        "null_mean": 0.0018888807288321304,
+        "bar_p95": 0.005025125628140704,
+        "fires_above_bar": 4,
+        "n_draws": 10,
+        "verdict": "at baseline"
+      },
+      "m2_any_copy": {
+        "observed_mean": 0.43109079545597656,
+        "observed_min": 0.38,
+        "observed_max": 0.47,
+        "null_mean": 0.09580250280705803,
+        "bar_p95": 0.11809045226130653,
+        "fires_above_bar": 10,
+        "n_draws": 10,
+        "verdict": "MEMORISING"
+      },
+      "m3_mset_copy": {
+        "observed_mean": 0.5269073279933503,
+        "observed_min": 0.495,
+        "observed_max": 0.5525,
+        "null_mean": 0.14088238794511163,
+        "bar_p95": 0.16966054376447443,
+        "fires_above_bar": 10,
+        "n_draws": 10,
+        "verdict": "MEMORISING"
+      }
+    },
+    {
+      "checkpoint": "D:\\GenAI for Warehouse\\data\\rtf\\train_ckpt\\child\\checkpoint-43400",
+      "step": 43400,
+      "epoch": 200.0,
+      "seconds": 105.6739912033081,
+      "m1_self_copy": {
+        "observed_mean": 0.008500000000000002,
+        "observed_min": 0.0,
+        "observed_max": 0.0175,
+        "null_mean": 0.0016125,
+        "bar_p95": 0.005,
+        "fires_above_bar": 7,
+        "n_draws": 10,
+        "verdict": "MEMORISING"
+      },
+      "m2_any_copy": {
+        "observed_mean": 0.45249999999999996,
+        "observed_min": 0.4275,
+        "observed_max": 0.48,
+        "null_mean": 0.09416767514329832,
+        "bar_p95": 0.11557788944723618,
+        "fires_above_bar": 10,
+        "n_draws": 10,
+        "verdict": "MEMORISING"
+      },
+      "m3_mset_copy": {
+        "observed_mean": 0.5519999999999999,
+        "observed_min": 0.51,
+        "observed_max": 0.5775,
+        "null_mean": 0.14054925338462268,
+        "bar_p95": 0.16543431442928927,
+        "fires_above_bar": 10,
+        "n_draws": 10,
+        "verdict": "MEMORISING"
+      }
+    },
+    {
+      "checkpoint": "D:\\GenAI for Warehouse\\data\\rtf\\train_ckpt\\child\\checkpoint-48825",
+      "step": 48825,
+      "epoch": 225.0,
+      "seconds": 105.59748339653015,
+      "m1_self_copy": {
+        "observed_mean": 0.009499999999999998,
+        "observed_min": 0.0025,
+        "observed_max": 0.015,
+        "null_mean": 0.002,
+        "bar_p95": 0.005124999999999887,
+        "fires_above_bar": 7,
+        "n_draws": 10,
+        "verdict": "MEMORISING"
+      },
+      "m2_any_copy": {
+        "observed_mean": 0.47400000000000003,
+        "observed_min": 0.45,
+        "observed_max": 0.525,
+        "null_mean": 0.09153945644099208,
+        "bar_p95": 0.11,
+        "fires_above_bar": 10,
+        "n_draws": 10,
+        "verdict": "MEMORISING"
+      },
+      "m3_mset_copy": {
+        "observed_mean": 0.5672499999999999,
+        "observed_min": 0.5375,
+        "observed_max": 0.615,
+        "null_mean": 0.138153217617002,
+        "bar_p95": 0.16,
+        "fires_above_bar": 10,
+        "n_draws": 10,
+        "verdict": "MEMORISING"
+      }
+    },
+    {
+      "checkpoint": "D:\\GenAI for Warehouse\\data\\rtf\\train_ckpt\\child\\checkpoint-54250",
+      "step": 54250,
+      "epoch": 250.0,
+      "seconds": 108.48032307624817,
+      "m1_self_copy": {
+        "observed_mean": 0.013500000000000002,
+        "observed_min": 0.005,
+        "observed_max": 0.0175,
+        "null_mean": 0.001825,
+        "bar_p95": 0.005,
+        "fires_above_bar": 9,
+        "n_draws": 10,
+        "verdict": "MEMORISING"
+      },
+      "m2_any_copy": {
+        "observed_mean": 0.48374999999999996,
+        "observed_min": 0.45,
+        "observed_max": 0.51,
+        "null_mean": 0.09555494959849245,
+        "bar_p95": 0.12,
+        "fires_above_bar": 10,
+        "n_draws": 10,
+        "verdict": "MEMORISING"
+      },
+      "m3_mset_copy": {
+        "observed_mean": 0.5835000000000001,
+        "observed_min": 0.5425,
+        "observed_max": 0.6175,
+        "null_mean": 0.14461932270853456,
+        "bar_p95": 0.17252161654135334,
+        "fires_above_bar": 10,
+        "n_draws": 10,
+        "verdict": "MEMORISING"
+      }
+    },
+    {
+      "checkpoint": "D:\\GenAI for Warehouse\\data\\rtf\\train_ckpt\\child\\checkpoint-59675",
+      "step": 59675,
+      "epoch": 275.0,
+      "seconds": 103.69068765640259,
+      "m1_self_copy": {
+        "observed_mean": 0.016000000000000004,
+        "observed_min": 0.005,
+        "observed_max": 0.0225,
+        "null_mean": 0.00165,
+        "bar_p95": 0.005,
+        "fires_above_bar": 9,
+        "n_draws": 10,
+        "verdict": "MEMORISING"
+      },
+      "m2_any_copy": {
+        "observed_mean": 0.48175,
+        "observed_min": 0.4525,
+        "observed_max": 0.515,
+        "null_mean": 0.0899154555536294,
+        "bar_p95": 0.1175,
+        "fires_above_bar": 10,
+        "n_draws": 10,
+        "verdict": "MEMORISING"
+      },
+      "m3_mset_copy": {
+        "observed_mean": 0.56725,
+        "observed_min": 0.535,
+        "observed_max": 0.59,
+        "null_mean": 0.13729225056652142,
+        "bar_p95": 0.16290726817042606,
+        "fires_above_bar": 10,
+        "n_draws": 10,
+        "verdict": "MEMORISING"
+      }
+    },
+    {
+      "checkpoint": "D:\\GenAI for Warehouse\\data\\rtf\\train_ckpt\\child\\checkpoint-65100",
+      "step": 65100,
+      "epoch": 300.0,
+      "seconds": 107.45744800567627,
+      "m1_self_copy": {
+        "observed_mean": 0.02075,
+        "observed_min": 0.01,
+        "observed_max": 0.035,
+        "null_mean": 0.0013750000000000001,
+        "bar_p95": 0.005,
+        "fires_above_bar": 10,
+        "n_draws": 10,
+        "verdict": "MEMORISING"
+      },
+      "m2_any_copy": {
+        "observed_mean": 0.4795,
+        "observed_min": 0.4375,
+        "observed_max": 0.5075,
+        "null_mean": 0.09152253030074042,
+        "bar_p95": 0.11533189033189029,
+        "fires_above_bar": 10,
+        "n_draws": 10,
+        "verdict": "MEMORISING"
+      },
+      "m3_mset_copy": {
+        "observed_mean": 0.56875,
+        "observed_min": 0.5325,
+        "observed_max": 0.62,
+        "null_mean": 0.1407050542737993,
+        "bar_p95": 0.1692323232323232,
+        "fires_above_bar": 10,
+        "n_draws": 10,
+        "verdict": "MEMORISING"
+      }
+    }
+  ],
+  "seed": 20260727,
+  "n_draws": 10,
+  "n_baskets": 400
+}

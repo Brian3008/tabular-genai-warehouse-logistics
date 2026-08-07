@@ -1,0 +1,212 @@
+{
+  "config": {
+    "orders": 300,
+    "draws": 10,
+    "maps": [
+      11,
+      22,
+      33
+    ],
+    "policy": "nearest",
+    "quick": false
+  },
+  "LIMITATION_mapping": "aisle->shelf map is a modeling abstraction, not a real warehouse layout; the comparison is valid because the map is IDENTICAL across streams, not because it is physically real",
+  "LIMITATION_assembly": "CTGAN/TabSyn emit independent item rows with no order_id, so baskets for B/C/D are assembled i.i.d. from a real size schedule; basket-size realism is NOT tested and cannot be",
+  "n_records": 30,
+  "deadlocks": [],
+  "steps_per_delivery": {
+    "null_mean": 0.1576645444579053,
+    "bar_95pct": 0.43644993361257534,
+    "n_null": 30,
+    "stream_level_null_mean": 0.11644760825227497,
+    "A_real_true": {
+      "mean": 6.863473079289272,
+      "sd": 0.5904480566238527,
+      "n": 30,
+      "signed_diff_vs_B_mean": -0.06481172701449113,
+      "abs_diff_vs_B_mean": 0.18461266489733064,
+      "fires_vs_B": 3,
+      "n_draws": 30,
+      "fire_rate_vs_B": 0.1
+    },
+    "B_real_pool": {
+      "mean": 6.928284806303763,
+      "sd": 0.5515199276673377,
+      "n": 30,
+      "signed_diff_vs_B_mean": 0.0,
+      "abs_diff_vs_B_mean": 0.0,
+      "fires_vs_B": 0,
+      "n_draws": 30,
+      "fire_rate_vs_B": 0.0
+    },
+    "C_tabsyn": {
+      "mean": 6.944543543734711,
+      "sd": 0.546566932944134,
+      "n": 30,
+      "signed_diff_vs_B_mean": 0.016258737430948706,
+      "abs_diff_vs_B_mean": 0.11420408764716834,
+      "fires_vs_B": 0,
+      "n_draws": 30,
+      "fire_rate_vs_B": 0.0
+    },
+    "D_ctgan": {
+      "mean": 6.954485549668564,
+      "sd": 0.47351819958404395,
+      "n": 30,
+      "signed_diff_vs_B_mean": 0.0262007433648017,
+      "abs_diff_vs_B_mean": 0.12820852306984676,
+      "fires_vs_B": 0,
+      "n_draws": 30,
+      "fire_rate_vs_B": 0.0
+    }
+  },
+  "throughput_per_1k": {
+    "null_mean": 3.1447177427291075,
+    "bar_95pct": 7.261867166410971,
+    "n_null": 30,
+    "stream_level_null_mean": 2.2748029389645725,
+    "A_real_true": {
+      "mean": 146.77990193372526,
+      "sd": 12.59784952586307,
+      "n": 30,
+      "signed_diff_vs_B_mean": 1.53506536487803,
+      "abs_diff_vs_B_mean": 3.8156304204164786,
+      "fires_vs_B": 4,
+      "n_draws": 30,
+      "fire_rate_vs_B": 0.13333333333333333
+    },
+    "B_real_pool": {
+      "mean": 145.24483656884726,
+      "sd": 11.44778974176852,
+      "n": 30,
+      "signed_diff_vs_B_mean": 0.0,
+      "abs_diff_vs_B_mean": 0.0,
+      "fires_vs_B": 0,
+      "n_draws": 30,
+      "fire_rate_vs_B": 0.0
+    },
+    "C_tabsyn": {
+      "mean": 144.8953523814268,
+      "sd": 11.427177317606219,
+      "n": 30,
+      "signed_diff_vs_B_mean": -0.3494841874204539,
+      "abs_diff_vs_B_mean": 2.351868367940532,
+      "fires_vs_B": 0,
+      "n_draws": 30,
+      "fire_rate_vs_B": 0.0
+    },
+    "D_ctgan": {
+      "mean": 144.45174117644538,
+      "sd": 9.701593809613176,
+      "n": 30,
+      "signed_diff_vs_B_mean": -0.7930953924018799,
+      "abs_diff_vs_B_mean": 2.6558343643885594,
+      "fires_vs_B": 1,
+      "n_draws": 30,
+      "fire_rate_vs_B": 0.03333333333333333
+    }
+  },
+  "mean_order_completion": {
+    "null_mean": 302.63411111111105,
+    "bar_95pct": 721.4183333333335,
+    "n_null": 30,
+    "stream_level_null_mean": 550.2924444444445,
+    "A_real_true": {
+      "mean": 8152.803999999999,
+      "sd": 672.0158924859068,
+      "n": 30,
+      "signed_diff_vs_B_mean": 1041.3160000000003,
+      "abs_diff_vs_B_mean": 1041.3160000000003,
+      "fires_vs_B": 26,
+      "n_draws": 30,
+      "fire_rate_vs_B": 0.8666666666666667
+    },
+    "B_real_pool": {
+      "mean": 7111.487999999999,
+      "sd": 785.578814550185,
+      "n": 30,
+      "signed_diff_vs_B_mean": 0.0,
+      "abs_diff_vs_B_mean": 0.0,
+      "fires_vs_B": 0,
+      "n_draws": 30,
+      "fire_rate_vs_B": 0.0
+    },
+    "C_tabsyn": {
+      "mean": 7123.7342222222205,
+      "sd": 635.6502004596515,
+      "n": 30,
+      "signed_diff_vs_B_mean": 12.246222222222332,
+      "abs_diff_vs_B_mean": 241.31755555555551,
+      "fires_vs_B": 0,
+      "n_draws": 30,
+      "fire_rate_vs_B": 0.0
+    },
+    "D_ctgan": {
+      "mean": 6754.695666666666,
+      "sd": 766.3321779224531,
+      "n": 30,
+      "signed_diff_vs_B_mean": -356.79233333333315,
+      "abs_diff_vs_B_mean": 434.4267777777777,
+      "fires_vs_B": 5,
+      "n_draws": 30,
+      "fire_rate_vs_B": 0.16666666666666666
+    }
+  },
+  "by_mapping_primary": {
+    "11": {
+      "bar": 0.15617983626374024,
+      "A_real_true": {
+        "fires": 5,
+        "n": 10,
+        "mean_abs_diff": 0.1490576098286131
+      },
+      "C_tabsyn": {
+        "fires": 1,
+        "n": 10,
+        "mean_abs_diff": 0.08185262188497519
+      },
+      "D_ctgan": {
+        "fires": 2,
+        "n": 10,
+        "mean_abs_diff": 0.0744775231002536
+      }
+    },
+    "22": {
+      "bar": 0.48921513686346185,
+      "A_real_true": {
+        "fires": 2,
+        "n": 10,
+        "mean_abs_diff": 0.2558659059032887
+      },
+      "C_tabsyn": {
+        "fires": 0,
+        "n": 10,
+        "mean_abs_diff": 0.1606153057128492
+      },
+      "D_ctgan": {
+        "fires": 0,
+        "n": 10,
+        "mean_abs_diff": 0.17124927848315136
+      }
+    },
+    "33": {
+      "bar": 0.21079984598520035,
+      "A_real_true": {
+        "fires": 3,
+        "n": 10,
+        "mean_abs_diff": 0.14891447896009008
+      },
+      "C_tabsyn": {
+        "fires": 0,
+        "n": 10,
+        "mean_abs_diff": 0.10014433534368061
+      },
+      "D_ctgan": {
+        "fires": 3,
+        "n": 10,
+        "mean_abs_diff": 0.1388987676261353
+      }
+    }
+  },
+  "elapsed_sec": 12099.5
+}

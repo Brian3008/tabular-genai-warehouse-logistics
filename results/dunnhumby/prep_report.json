@@ -1,0 +1,61 @@
+{
+  "source_files": {
+    "transactions": "transaction_data.csv",
+    "products": "product.csv"
+  },
+  "n_transaction_rows": 2595732,
+  "n_product_rows": 92353,
+  "category_cardinality": {
+    "department": 44,
+    "commodity_desc": 308,
+    "sub_commodity_desc": 2383
+  },
+  "unmapped_rows": 0,
+  "rows_after_join": 2584441,
+  "n_categories_used": 305,
+  "week_no_range": [
+    1,
+    102
+  ],
+  "rows_per_year": {
+    "1": 1180148,
+    "2": 1404293
+  },
+  "common_weeks_of_year": [
+    1,
+    50
+  ],
+  "n_common_weeks": 50,
+  "n_baskets": 276112,
+  "n_items": 2584441,
+  "basket_size": {
+    "mean": 9.360118357767861,
+    "median": 5.0,
+    "p95": 35.0,
+    "max": 168
+  },
+  "n_households": 2500,
+  "n_stores": 582,
+  "baskets_spanning_multiple_weeks": 0,
+  "per_week": {
+    "rows": [
+      1874,
+      27054,
+      32975
+    ],
+    "baskets": [
+      138,
+      2931,
+      3357
+    ],
+    "households": [
+      86,
+      1311,
+      1428
+    ]
+  },
+  "households_in_both_years": 2475,
+  "output_rows": 2584441,
+  "category_field": "commodity_desc",
+  "NOTE_anchor": "WEEK_NO is relative to study start, not the calendar; Kaggle CSVs carry no real dates. Claims are 'annual periodicity at offset X', never a named holiday."
+}

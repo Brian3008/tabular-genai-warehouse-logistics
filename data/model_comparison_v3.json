@@ -1,0 +1,26 @@
+[
+  {
+    "model": "CTGAN v3",
+    "quality": 0.920462963007103,
+    "shapes": 0.920462963007103,
+    "correlation": 0.9702232909736922,
+    "ml_efficacy": 0.8796513905209558,
+    "privacy": 1.0772944866878782
+  },
+  {
+    "model": "Shuffling baseline",
+    "quality": 0.957370370409469,
+    "shapes": 0.957370370409469,
+    "correlation": 0.9784550599784402,
+    "ml_efficacy": 0.7802585193889542,
+    "privacy": 1.0585666776580962
+  },
+  {
+    "model": "GaussianCopula",
+    "quality": 0.9192592592979197,
+    "shapes": 0.9192592592979197,
+    "correlation": 0.9779982131632134,
+    "ml_efficacy": 0.7885820603211908,
+    "privacy": 1.2385826486455105
+  }
+]

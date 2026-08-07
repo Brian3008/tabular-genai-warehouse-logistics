@@ -1,0 +1,40 @@
+{
+  "N": 8417,
+  "n_small": 16835,
+  "n_large": 25344,
+  "null_mean": {
+    "travel": 0.26032160963244627,
+    "gini": 0.004972612286080588,
+    "tvd": 0.0564660805512653
+  },
+  "bar": {
+    "travel": 0.6417585551330864,
+    "gini": 0.009780933753473338,
+    "tvd": 0.06357966021147678
+  },
+  "observed_mean": {
+    "travel": 0.23826798162230958,
+    "gini": 0.02269642638654181,
+    "tvd": 0.13129381014613278
+  },
+  "fire_rate": {
+    "travel": 0.1,
+    "gini": 1.0,
+    "tvd": 1.0
+  },
+  "effect": {
+    "travel": false,
+    "gini": true,
+    "tvd": true
+  },
+  "any_effect": true,
+  "design": {
+    "n_null_draws": 40,
+    "n_test_draws": 10,
+    "travel_reps": 30,
+    "percentile": 95,
+    "small_max": 10,
+    "large_min": 14,
+    "rule": "metric fires on majority of draws"
+  }
+}

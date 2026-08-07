@@ -1,0 +1,14 @@
+{
+  "audited_file": "data/synthetic_v3.csv",
+  "draws": [],
+  "scale_pair": null,
+  "training_proportions": {
+    "small": 0.3976541309288175,
+    "large": 0.6023458690711825
+  },
+  "generated_proportions": {
+    "large": 0.58398,
+    "small": 0.41602
+  },
+  "issues": []
+}
